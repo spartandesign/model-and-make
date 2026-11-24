@@ -37,7 +37,23 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch10-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
+
+
+<!--enh:video-->
+      <h2>Watch first: make a working drawing</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch10-drawing-walkthrough-poster.jpg" aria-label="Narrated walkthrough: placing views, dimensioning the deck, filling the title block, and the peer check. Captions are on screen.">
+          <source src="media/ch10-drawing-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch10-drawing-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (0:58). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>A model lives on your screen. A working drawing lets anyone build and measure your deck, without opening the 3D file. In Onshape, start a new drawing from your deck model. Place the top view and the front view. Onshape makes them from your model. Set the scale to one to one, and the units to millimeters. Now dimension it: the overall length and width, the thickness, and the kicktail height. Add the hole spacing and the hole diameter. Note the hole as the bolt size plus your clearance. Same rule as Week 2: each size only once. Fill in the title block: the part name, your name and the date, the scale, the units, the material, and a drawing number with a revision letter. Then trade drawings with a classmate. Could they build your deck from the drawing alone? If something&#x27;s missing, that&#x27;s exactly what you fix.</p></details>
+<!--/enh:video-->
 <h2>Monday — review the conventions</h2>
 <p>Quick refresher from Week 2 — the rules are the same on paper or in CAD.</p>
 <ul><li><strong>Orthographic views. </strong>Top, front, and right, laid out in third-angle projection (top above front, right to the right of front).</li><li><strong>Dimensioning rules. </strong>Use extension and dimension lines; dimension each feature once, clearly; show overall sizes and feature sizes (holes, thickness).</li><li><strong>The title block. </strong>The drawing’s label — part name, who drew it, scale, units, material, and a drawing number.</li></ul>
@@ -45,13 +61,87 @@
 <ul><li><strong>Start a drawing. </strong>In Onshape, from your fingerboard deck model, create a new Drawing.</li><li><strong>Place the standard views. </strong>Insert the top, front, and right views — Onshape generates them from your model; your job is to arrange them in third-angle layout.</li><li><strong>Set scale and units. </strong>Choose a sheet scale (1:1 works for a fingerboard) and confirm units are millimeters.</li></ul>
 <h2>Block 2 — dimension, title block, export</h2>
 <ul><li><strong>Dimension it. </strong>Add overall length (96 mm), width (32 mm), thickness, kicktail height, the mounting-hole diameter (note it as bolt + clearance), and the hole spacing.</li><li><strong>Fill the title block. </strong>Part name, your name, date, scale, units (mm), material (PLA), drawing number, revision.</li><li><strong>Add notes if needed, then export PDF. </strong>Your drawing should now read like a complete working drawing: views, dimensions, and title block.</li><li><strong>Peer check. </strong>Trade drawings with a classmate — could they build your deck from the drawing alone? If anything’s missing, that’s what to fix.</li></ul>
+
+
+<!--enh:interactive-->
+      <h2>Try it: is this drawing complete?</h2>
+      <p>Pick the dimensions a working drawing of the deck needs. Then press <strong>Check my drawing</strong>. You'll find out what's missing and what doesn't belong.</p>
+      <div class="sim dimsim"></div>
+<!--/enh:interactive-->
 <h2>Title block — what each field is for</h2>
 <table class="dtable"><tbody><tr><th>Field</th><th>What it tells the reader</th></tr><tr><td>Part name</td><td>What the part is (Fingerboard Deck)</td></tr><tr><td>Name + date</td><td>Who drew it and when</td></tr><tr><td>Scale</td><td>Drawing size vs. real size (1:1 = same size)</td></tr><tr><td>Units</td><td>How to read every number (mm)</td></tr><tr><td>Material</td><td>What it’s made of (PLA)</td></tr><tr><td>Drawing # + Rev</td><td>How to track the drawing and its version</td></tr></tbody></table>
-<p><em>The standard for a good working drawing is completeness: every dimension needed to make and measure the part is there, stated once, clearly, with no guessing. The “could a classmate build it from this?” test is exactly how a real shop judges a drawing — and in Week 15 each capstone group makes a section and assembly drawing of their park modules, so the bar you set here carries forward.</em></p>
+<p><em>The standard for a good working drawing is completeness: every dimension needed to make and measure the part is there, stated once, clearly, with no guessing. The “could a classmate build it from this?” test is exactly how a real shop judges a drawing — and in Week 17 each capstone group makes a section and assembly drawing of their park modules, so the bar you set here carries forward.</em></p>
 <h2>What to submit</h2>
 <ul><li>Your exported working-drawing PDF (views + dimensions + title block).</li><li><strong>One sentence — </strong>on your peer-check: what your partner said they could or couldn’t build, and what you fixed.</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Three standard views, correctly laid out</td><td>5</td></tr><tr><td>Dimensions complete and unambiguous (overall + features + holes)</td><td>8</td></tr><tr><td>Title block filled out completely</td><td>4</td></tr><tr><td>Passes the build-from-it peer check (or fixes noted)</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "What makes a working drawing “good”?",
+  "options": [
+   "It has lots of color",
+   "It's complete: every needed size, stated once, with no guessing",
+   "It fits on a sticky note",
+   "It shows only the 3D view"
+  ],
+  "answer": 1,
+  "why": "Completeness is the standard: a classmate could build it from the drawing alone.",
+  "hint": "Think about the peer check."
+ },
+ {
+  "q": "What scale works for a fingerboard drawing?",
+  "options": [
+   "1:10",
+   "1:1",
+   "10:1",
+   "No scale"
+  ],
+  "answer": 1,
+  "why": "A fingerboard is small, so 1:1 (actual size) fits the sheet.",
+  "hint": "Drawing size = real size."
+ },
+ {
+  "q": "How should you label the mounting hole size?",
+  "options": [
+   "Just “hole”",
+   "As bolt + clearance, for example Ø 2.30",
+   "Leave it off",
+   "In inches only"
+  ],
+  "answer": 1,
+  "why": "Noting the hole as bolt + clearance tells the reader why it's that size.",
+  "hint": "The page says how to note it."
+ },
+ {
+  "q": "Which belongs in the title block?",
+  "options": [
+   "Part name, name, date, scale, units, material, drawing number and revision",
+   "The deck's color",
+   "Your fit log",
+   "The hole spacing"
+  ],
+  "answer": 0,
+  "why": "The title block labels the drawing. Sizes go on the views.",
+  "hint": "It's the drawing's label."
+ },
+ {
+  "q": "In the peer check, your partner can't find the deck thickness. What do you do?",
+  "options": [
+   "Tell them to guess",
+   "Add the thickness dimension",
+   "Delete the front view",
+   "Nothing"
+  ],
+  "answer": 1,
+  "why": "Anything a partner can't find is missing. Add it.",
+  "hint": "The peer check finds what to fix."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Working drawing</span></div>

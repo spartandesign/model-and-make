@@ -37,10 +37,33 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch07-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
+
+
+<!--enh:video-->
+      <h2>Watch first: the five rules</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch07-printing-walkthrough-poster.jpg" aria-label="Narrated walkthrough of the five design-for-printing rules: orientation, supports, minimum feature size, first layer, and clearance. Captions are on screen.">
+          <source src="media/ch07-printing-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch07-printing-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (1:05). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>A part that looks perfect on screen can still fail on the printer. These five rules help it print well. Rule one: orientation is strength. A print is built in layers, and it&#x27;s weakest between them. Print the deck flat, so the layers run along it. Stand it on edge, and it can snap right between the layers. Rule two: avoid supports. A gentle slope stacks fine, layer on layer. A steep overhang has nothing underneath it, so it needs support material. The rule of thumb: more than forty-five degrees needs support. Rule three: the nozzle is only point four millimeters wide, so keep every feature at least one millimeter thick. Rule four: a big flat bottom sticks to the bed. If the base is tiny, add a brim to hold it down. Rule five: parts that fit together need clearance. Make the hole a little bigger than the peg. And remember the plate: every capstone section must fit within one hundred eighty millimeters.</p></details>
+<!--/enh:video-->
 <h2>The five rules of design for printing</h2>
 <ul><li><strong>Orientation = strength. </strong>A print is built in layers from the bed up, and it’s weakest between layers. Place the part so the layers run along the direction it will be stressed — print the deck flat so the layers run along it, not across the kicktail.</li><li><strong>Avoid supports. </strong>The printer can’t lay plastic on thin air; any surface overhanging more than about 45° from vertical needs support material that wastes plastic and leaves a rough surface. Keep big flat bottoms on the bed and use angled chamfers instead of sharp overhangs — aim to print with no supports at all.</li><li><strong>Mind the minimum feature size. </strong>The nozzle is about 0.4 mm wide, so very thin walls, pegs, or raised text won’t form. Keep any feature at least ~1 mm thick. (Printers think in millimeters; we design in inches — convert when you need to: 1 in = 25.4 mm.)</li><li><strong>First layer and bed contact. </strong>The first layer squishes onto the bed, so a big flat bottom sticks well (and may read a touch wide — the “elephant’s foot” from your Week 5 cube). A tiny contact area can pop loose mid-print; add a brim to hold it down.</li><li><strong>Clearance for fit. </strong>Two parts that must fit can’t be modeled the same size. Make the hole bigger than the peg by a clearance, and size that clearance from your measured Week 5 deviation plus a little room to slide. Too tight = interference (won’t go on); too loose = slop.</li></ul>
 <p><em>Clearance is the rule that carries the rest of the course: it’s how your Week 9 deck holes fit the calipered trucks, and how the capstone sections snap to one connection standard. Also remember the build area: each capstone section must fit ≤ 180 mm (the A1 Mini bed, so it can print on any of our printers) — if a part is bigger, split it into sections that connect.</em></p>
+
+
+<!--enh:interactive-->
+      <h2>Try it: when does it need support?</h2>
+      <p>Drag the angle. Watch how each layer sits on the one below it. Find the point where layers start hanging over thin air.</p>
+      <div class="sim overhangsim"></div>
+<!--/enh:interactive-->
 <h2>Apply it — prep your fingerboard deck</h2>
 <p>Use the five rules to plan the deck you’ll model and print in Week 9. Fill the checklist below — it’s your deliverable and your build plan.</p>
 <table class="dtable"><tbody><tr><th>Rule</th><th>Question to answer</th><th>My plan</th></tr><tr><td>1 Orientation</td><td>How will the deck sit on the bed, and why?</td><td></td></tr><tr><td>2 Supports</td><td>Any overhang steeper than ~45°? How will you avoid supports?</td><td></td></tr><tr><td>3 Min feature</td><td>Is any part of the deck thinner than ~1 mm? How will you fix it?</td><td></td></tr><tr><td>4 First layer</td><td>Big flat base, or do you need a brim?</td><td></td></tr><tr><td>5 Clearance</td><td>Truck bolt holes: how much bigger than the bolt, based on your Wk 5 deviation?</td><td></td></tr><tr><td>Fits the plate</td><td>Does the deck fit the bed?</td><td></td></tr></tbody></table>
@@ -49,6 +72,73 @@
 <ul><li>Your completed design-for-printing checklist (all six rows, with reasoning).</li><li>A screenshot of your deck model shown in its print orientation.</li><li><strong>One sentence — </strong>the clearance you’ll use for the truck holes, and the Week 5 number you based it on.</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Checklist complete with reasoning (not one-word answers)</td><td>8</td></tr><tr><td>Orientation choice correct and justified (flat / layers along the deck)</td><td>4</td></tr><tr><td>Clearance value is reasonable and tied to a measured deviation</td><td>5</td></tr><tr><td>Print-orientation screenshot submitted</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "A print is weakest...",
+  "options": [
+   "In the middle of a layer",
+   "Between layers",
+   "At the top",
+   "Where it's painted"
+  ],
+  "answer": 1,
+  "why": "Layers bond to each other less strongly than plastic within a layer, so parts break between layers.",
+  "hint": "Think about how it's built: layer on layer."
+ },
+ {
+  "q": "How should you print the fingerboard deck?",
+  "options": [
+   "Standing on its end",
+   "On its edge",
+   "Flat, so the layers run along it",
+   "Upside down on supports"
+  ],
+  "answer": 2,
+  "why": "Flat keeps layers running along the deck, so the kicktail is strong and no supports are needed.",
+  "hint": "Rule 1: orientation = strength."
+ },
+ {
+  "q": "About what overhang angle starts to need support material?",
+  "options": [
+   "10° from vertical",
+   "More than about 45° from vertical",
+   "Only at 90°",
+   "Any angle at all"
+  ],
+  "answer": 1,
+  "why": "Past about 45°, each new layer hangs out over air and needs support underneath.",
+  "hint": "Try the slider above."
+ },
+ {
+  "q": "The nozzle is 0.4 mm wide. How thin can a feature safely be?",
+  "options": [
+   "0.1 mm",
+   "0.2 mm",
+   "About 1 mm or more",
+   "There's no limit"
+  ],
+  "answer": 2,
+  "why": "Keep features at least about 1 mm thick, or they won't form.",
+  "hint": "Several nozzle-widths thick."
+ },
+ {
+  "q": "Each capstone section must fit within...",
+  "options": [
+   "100 mm",
+   "180 mm (the A1 Mini bed)",
+   "256 mm",
+   "Any size you want"
+  ],
+  "answer": 1,
+  "why": "180 mm fits the A1 Mini bed, so any section can print on any of our printers. Bigger ideas split into sections.",
+  "hint": "It's the smallest bed in the lab."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Clearance</span></div>

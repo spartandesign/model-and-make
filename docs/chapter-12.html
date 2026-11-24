@@ -37,13 +37,36 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch12-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
+
+
+<!--enh:video-->
+      <h2>Watch first: slots that hold with no glue</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch12-rack-walkthrough-poster.jpg" aria-label="Narrated walkthrough: measuring plywood, drawing slots narrower by the kerf, board slots, and logging the fit. Captions are on screen.">
+          <source src="media/ch12-rack-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch12-rack-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (1:02). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>This week you design a plywood rack for your fingerboards. Its panels slot together with no glue, and your kerf number makes that work. First, caliper the plywood. It&#x27;s about three millimeters thick. Then pull out your kerf from last week. In this example, it&#x27;s point two millimeters. And measure your finished fingerboard, so the board slots hold it. Here&#x27;s the key move. Draw each slot narrower than the plywood, by the kerf. Three minus point two is two point eight. The laser burns away the kerf, so the cut slot comes out about three millimeters. Now the tab presses in snug, with no glue. The slots that hold your boards are different. Make them a little wider than the board. Each board should drop in and stand up, without forcing. When your rack comes back, press the joints together and load your boards. Then log the fit: too tight, too loose, or just right, and one change for next time.</p></details>
+<!--/enh:video-->
 <h2>Monday — measure and recall your kerf</h2>
 <ul><li><strong>Measure the plywood thickness. </strong>Caliper the plywood your teacher will cut (about 3 mm) — the tab-and-slot joints are sized from this.</li><li><strong>Measure the assembled board. </strong>Caliper a finished fingerboard’s width and height (with trucks and wheels) so the board slots hold it without forcing.</li><li><strong>Recall your kerf. </strong>Pull your Week 12 kerf value — slots cut a little wider than drawn, so you’ll subtract the kerf for a snug press fit.</li></ul>
 <h2>Block 1 — design the rack</h2>
 <ul><li><strong>Lay out the panels. </strong>Design a simple rack — a base and uprights (or two side panels and a spine) that hold two or three boards. Keep every panel within the laser bed and the plywood sheet.</li><li><strong>Add the joints with kerf compensation. </strong>Where panels cross, draw tab-and-slot joints. Make each slot = plywood thickness − kerf so the tab press-fits snugly without glue.</li><li><strong>Size the board slots. </strong>Make the slots that hold the fingerboards a little wider than the assembled board so each board drops in and stands without forcing.</li><li><strong>Engrave (optional). </strong>Add a name or logo on a panel face.</li><li><strong>Submit. </strong>Your teacher cuts and engraves your rack in plywood.</li></ul>
 <h2>Block 2 — assemble and evaluate</h2>
 <ul><li><strong>Press-fit the joints. </strong>Fit the tabs into the slots. Snug and square with no glue is the goal — that’s your kerf compensation working.</li><li><strong>Load your boards. </strong>Stand your fingerboards in the rack. Do they sit without forcing and without falling over?</li><li><strong>Evaluate and log. </strong>Were the joints too tight, too loose, or just right? Record the result and one change.</li></ul>
+
+
+<!--enh:interactive-->
+      <h2>Try it: size the slot</h2>
+      <p>The plywood is 3.0 mm thick and the kerf is 0.2 mm. Slide the slot size you would <em>draw</em>. The laser adds the kerf. Find the snug press fit.</p>
+      <div class="sim slotsim" data-thick="3.0" data-kerf="0.2"></div>
+<!--/enh:interactive-->
 <h2>Fit and finish log</h2>
 <table class="dtable"><tbody><tr><th>Item</th><th>Your value / note</th></tr><tr><td>Plywood thickness (mm)</td><td></td></tr><tr><td>Slot width = thickness − kerf</td><td></td></tr><tr><td>Board slot width (assembled board + room)</td><td></td></tr><tr><td>Joint fit (tight / just right / loose)</td><td></td></tr><tr><td>One change for next time</td><td></td></tr></tbody></table>
 <p><em><em>Shaded column is yours to fill in.</em></em></p>
@@ -52,6 +75,73 @@
 <ul><li>A photo of your assembled rack holding your boards.</li><li>Your completed fit &amp; finish log.</li><li><strong>One sentence — </strong>how your kerf compensation affected the joint fit.</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Plywood and board measured; rack sized to fit</td><td>5</td></tr><tr><td>Tab-and-slot joints cut with kerf compensation; they press-fit</td><td>7</td></tr><tr><td>Board slots hold the fingerboards; rack is stable</td><td>4</td></tr><tr><td>Assembled result + fit log with a sensible change</td><td>4</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "Plywood is 3.0 mm and your kerf is 0.2 mm. What slot width should you <strong>draw<\/strong>?",
+  "options": [
+   "3.2 mm",
+   "3.0 mm",
+   "2.8 mm",
+   "2.0 mm"
+  ],
+  "answer": 2,
+  "why": "Slot = thickness − kerf = 3.0 − 0.2 = 2.8 mm. The laser removes 0.2, so the cut slot is about 3.0.",
+  "hint": "Thickness minus kerf."
+ },
+ {
+  "q": "Why draw the slot <em>narrower<\/em> than the plywood?",
+  "options": [
+   "To save plywood",
+   "The laser removes the kerf, so the slot comes out wider than drawn",
+   "So it needs glue",
+   "It looks better"
+  ],
+  "answer": 1,
+  "why": "Holes and slots grow by the kerf when cut. Drawing them narrower makes the cut size match the plywood.",
+  "hint": "What happens to cut slots?"
+ },
+ {
+  "q": "The joints fall apart. What went wrong?",
+  "options": [
+   "The slots came out too wide",
+   "The slots came out too narrow",
+   "The plywood was too thick",
+   "The engraving was too deep"
+  ],
+  "answer": 0,
+  "why": "Loose joints mean the cut slot is wider than the tab. Draw the slot a little narrower next time.",
+  "hint": "Loose = too much room."
+ },
+ {
+  "q": "How wide should the slots that <strong>hold the fingerboards<\/strong> be?",
+  "options": [
+   "Exactly the board width",
+   "A little wider than the board",
+   "Narrower than the board",
+   "2.8 mm"
+  ],
+  "answer": 1,
+  "why": "Board slots should let each board drop in and stand without forcing, so give them some room.",
+  "hint": "Joints are snug. Board slots are different."
+ },
+ {
+  "q": "What holds the rack together?",
+  "options": [
+   "Glue",
+   "Screws",
+   "Tab-and-slot press fits",
+   "Tape"
+  ],
+  "answer": 2,
+  "why": "Tab-and-slot joints sized with the kerf press together snugly, with no glue.",
+  "hint": "It's in the chapter title."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Press-fit (tab-and-slot)</span></div>

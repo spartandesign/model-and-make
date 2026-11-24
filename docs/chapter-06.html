@@ -37,13 +37,36 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch06-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
 <div class="card card--learn"><p class="card__title"><span class="ic">📚</span> Onshape lessons</p><p><a class="ext" href="https://learn.onshape.com/learn/article/unit-2-designing-a-skateboard" target="_blank" rel="noopener">Onshape Intro to CAD — Unit 2: Designing a Skateboard</a>. Use lessons 2.1–2.4. Each lesson has a slide deck and a student guide.</p></div>
+
+
+<!--enh:video-->
+      <h2>Watch first: parts, revolve, and mates</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch06-skateboard-walkthrough-poster.jpg" aria-label="Narrated walkthrough: skateboard parts, revolve, mates and degrees of freedom, and the truck bolt holes. Captions are on screen.">
+          <source src="media/ch06-skateboard-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch06-skateboard-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (1:00). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>For two weeks, you&#x27;ll model a skateboard in Onshape. The skills you learn here build your fingerboard and your skate park later. A skateboard is a set of parts that fit together. The deck. The trucks: a baseplate, a hanger, and a bushing. And the wheels, each with a bearing. To make round parts, you use revolve. Draw a flat profile next to an axis, then spin it all the way around. That&#x27;s how you make wheels and bearings. Later, it&#x27;s how you could make a ramp or a bowl. In the Assembly, mates connect the parts. A wheel mate leaves one degree of freedom: it can spin, but it can&#x27;t fall off. The deck is fixed, so it doesn&#x27;t move at all. Pay close attention to the truck bolt holes. Their spacing decides whether the trucks fit. This week the board is full size. In Week 9, you&#x27;ll measure real fingerboard trucks and place holes that actually fit.</p></details>
+<!--/enh:video-->
 <h2>Week 6 — model the deck and trucks</h2>
 <ul><li><strong>2.1 Designing the Deck. </strong>Fully constrain a deck sketch, extrude, fillet, and add the truck bolt-hole pattern.</li><li><strong>2.2 Designing the Trucks. </strong>Build the three truck parts (baseplate, hanger, bushing) with materials and mass.</li></ul>
 <h2>Week 7 — wheels, bearings, and assembly</h2>
 <ul><li><strong>2.3 Wheels and Bearings. </strong>Use revolve to make round parts, with construction lines and diameter dimensions.</li><li><strong>2.4 Putting It All Together. </strong>In the Assembly tab, fix the deck, make the wheels spin, insert hardware, and use mate connectors and degrees of freedom.</li></ul>
 <p>Lesson 2.5 “Now Shred!” is held for Week 10 — after your deck is printed, you’ll come back and customize it.</p>
+
+
+<!--enh:interactive-->
+      <h2>Try it: take the board apart</h2>
+      <p>A skateboard is a set of separate parts. Pull it apart to see each one, then spin the wheels: a wheel mate leaves exactly one degree of freedom.</p>
+      <div class="sim explodesim"></div>
+<!--/enh:interactive-->
 <h2>One thing you add</h2>
 <ul><li><strong>Bolt-hole connection note (after 2.1). </strong>In your paper notebook, sketch the truck-mounting layout and write one sentence on why hole placement matters for fit. Those holes are the exact Week 9 problem: you’ll caliper the real fingerboard trucks and place mounting holes that actually fit.</li></ul>
 <p><em>Looking ahead: the mates and degrees of freedom from 2.4 are the same skill the 12 capstone groups use to snap park sections to one connection standard; and the revolve from 2.3 is how you’d make a ramp or bowl. Early finishers can start a “Skate Ramp” Part Studio — a real head start on capstone design.</em></p>
@@ -52,6 +75,73 @@
 <ul><li><strong>Week 6 — </strong>your deck and three truck parts (paste your Onshape document link in Canvas).</li><li><strong>Week 7 — </strong>your fully assembled skateboard (deck, trucks, wheels, bearings, hardware).</li><li><strong>Bolt-hole notebook entry — </strong>the truck-mount sketch plus your one-sentence why.</li><li><strong>Exit tickets — </strong>submitted through Canvas for lessons 2.1–2.4.</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Onshape lessons 2.1–2.4 (Onshape’s 10-point rubric on each; fully-constrained sketch counts)</td><td>40</td></tr><tr><td>Bolt-hole connection note (truck-mount sketch + why hole placement matters)</td><td>5</td></tr><tr><td>Total</td><td>45</td></tr></tbody></table>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "Which Onshape tool turns a flat profile into a round part, like a wheel?",
+  "options": [
+   "Extrude",
+   "Revolve",
+   "Fillet",
+   "Mirror"
+  ],
+  "answer": 1,
+  "why": "Revolve spins a 2D profile around an axis, making wheels, bearings, and anything round.",
+  "hint": "Think “spin it around.”"
+ },
+ {
+  "q": "Where do you put the deck, trucks, and wheels together?",
+  "options": [
+   "A Part Studio",
+   "A Drawing",
+   "An Assembly",
+   "The Measure tool"
+  ],
+  "answer": 2,
+  "why": "Parts are made in Part Studios, then mated together in an Assembly.",
+  "hint": "Parts are made in one tab and put together in another."
+ },
+ {
+  "q": "A wheel mate leaves the wheel free to spin but not fall off. How many degrees of freedom does it have?",
+  "options": [
+   "0",
+   "1",
+   "3",
+   "6"
+  ],
+  "answer": 1,
+  "why": "One degree of freedom: spinning. Every other motion is locked.",
+  "hint": "Count the ways it can still move."
+ },
+ {
+  "q": "Why do the truck bolt holes matter so much?",
+  "options": [
+   "They change the deck's color",
+   "Their spacing decides whether the trucks fit",
+   "They make the deck lighter",
+   "They don't matter on screen"
+  ],
+  "answer": 1,
+  "why": "If the holes don't match the trucks' spacing, the trucks won't mount. That's exactly the Week 9 problem.",
+  "hint": "What has to line up with the trucks?"
+ },
+ {
+  "q": "Unit 2 models a full-size skateboard. What size is your Week 9 fingerboard deck?",
+  "options": [
+   "A full-size deck shrunk to fit",
+   "Real fingerboard scale, 96 mm long, measured with calipers",
+   "Whatever fits the printer",
+   "Exactly half size"
+  ],
+  "answer": 1,
+  "why": "You re-apply the same skills at real fingerboard size: 96 mm, measured from real parts.",
+  "hint": "Check the “Heads-up on scale” note."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Revolve</span><span class="term">Mate</span><span class="term">Degrees of freedom</span></div>

@@ -37,11 +37,27 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch11-listen.mp3" data-min="4"></div>
+<!--/enh:listen-->
 
+
+
+<!--enh:video-->
+      <h2>Watch first: the laser and the kerf</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch11-laser-walkthrough-poster.jpg" aria-label="Narrated walkthrough: how the beam cuts, cut versus score versus engrave, our two lasers, and measuring the kerf. Captions are on screen.">
+          <source src="media/ch11-laser-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch11-laser-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (1:23). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>This week you learn how a laser cutter works, what our two lasers can do, and the one number that makes laser parts fit. A laser cutter burns a thin line along your design. The beam has to be focused right at the surface to cut cleanly. Because the beam has width, it removes a strip of material. That strip is called the kerf. The same machine can do three jobs. High power cuts all the way through. Low power scores a fold line. A back-and-forth pass engraves a picture. Cutting and scoring follow your lines. Engraving sweeps across an area, like a printer. The Dremel LC40 is a forty watt laser. It&#x27;s the only one that cuts clear and colored acrylic. The Flux Ador is a twenty watt diode laser, for finer detail. It cuts wood, leather, card, and dark acrylic. So for clear or colored acrylic, always use the LC40. Your teacher runs both machines, with the lid closed and the fans on. Your teacher cuts a square drawn at twenty millimeters. Before you measure it, predict: will it come out bigger or smaller? It comes out a little smaller, because the beam burned away a strip all around it. Drawn minus measured is the kerf. Here, that&#x27;s point two millimeters. You&#x27;ll use that number next week.</p></details>
+<!--/enh:video-->
 <h2>How a laser cutter works</h2>
 <ul><li><strong>A focused beam removes material. </strong>The laser burns a thin line along your design. Because the beam has width, it removes a strip — so cuts aren’t exactly on the line. That strip is the kerf.</li><li><strong>Cut, score, engrave. </strong>High power cuts all the way through; low power scores a fold line on the surface; a back-and-forth pass engraves a shaded image. Same machine, different power and speed.</li><li><strong>Vector vs. raster. </strong>The laser follows your lines to cut and score (vector), and sweeps across an area like a printer to engrave (raster).</li><li><strong>Focus matters. </strong>The beam has to be focused at the material surface to cut cleanly — out of focus, it won’t cut through.</li></ul>
 <h2>Our two lasers — and when to use each</h2>
-<ul><li><strong>Dremel LC40 (CO₂). </strong>A 40-watt CO₂ laser. Cuts and engraves wood, acrylic in any color, leather, paper, and cardstock — the main cutter for the course’s wood and cardboard work.</li><li><strong>Flux Ador (diode). </strong>A diode laser with auto-focus and a color-printing module. Cuts dark materials only (not clear or light acrylic), and can print color before it engraves.</li><li><strong>Rule of thumb. </strong>Clear or colored acrylic → the LC40. Wood, leather, or dark material → either machine. Color graphics → the Ador.</li></ul>
+<ul><li><strong>Dremel LC40 (CO₂). </strong>A 40-watt CO₂ laser. Cuts and engraves wood, acrylic in any color, leather, paper, and cardstock — the main cutter for the course’s wood and cardboard work.</li><li><strong>Flux Ador (20 W diode). </strong>A diode laser for finer detail. Cuts wood, plywood, leather, card, and dark or black acrylic. It can’t cut clear or light-colored acrylic. Ours is the standard model, without the color-printing module.</li><li><strong>Rule of thumb. </strong>Clear or colored acrylic → the LC40. Wood, leather, card, or dark material → either machine. Thicker parts or faster cuts → the LC40.</li></ul>
 <h2>Material settings</h2>
 <p>Every material needs its own power and speed. Too much power scorches or over-cuts; too little doesn’t cut through. Your teacher tunes settings per material and will show you a material-test grid — small swatches cut at different power/speed values — so you can see which settings cut cleanly and engrave crisply.</p>
 <h2>Safety (laser)</h2>
@@ -49,6 +65,13 @@
 <h2>Measure the kerf</h2>
 <p>This is your hands-on part. Your teacher cuts a coupon of a known size (for example, a 20.0 mm square and a comb of slots); you caliper the result and find the kerf.</p>
 <ul><li><strong>Predict first. </strong>Before measuring, write down whether the cut-out square will come out bigger or smaller than 20.0 mm, and by how much.</li><li><strong>Measure the coupon. </strong>Caliper the cut-out square. Drawn size − measured size = the kerf, the width the beam removed.</li><li><strong>Record settings and kerf. </strong>Fill the card below from the demo: material, which machine, the best cut/engrave settings your teacher used, and your measured kerf.</li><li><strong>Work out the compensation. </strong>To press-fit a tab into a slot, the slot must be narrower than the tab by the kerf. Note that adjustment — you’ll use it on the Week 13 rack.</li></ul>
+
+
+<!--enh:interactive-->
+      <h2>Try it: what the kerf does</h2>
+      <p>Slide the kerf. Watch what happens to a cut-out part and to a cut hole. Then predict your coupon before you measure it.</p>
+      <div class="sim kerfsim"></div>
+<!--/enh:interactive-->
 <h2>Kerf and settings card</h2>
 <table class="dtable"><tbody><tr><th>Item</th><th>Your value</th></tr><tr><td>Material</td><td></td></tr><tr><td>Machine used (LC40 / Ador)</td><td></td></tr><tr><td>Best cut setting (power / speed)</td><td></td></tr><tr><td>Best engrave setting (power / speed)</td><td></td></tr><tr><td>Drawn coupon size (mm)</td><td></td></tr><tr><td>Measured coupon size (mm)</td><td></td></tr><tr><td>Kerf = drawn − measured (mm)</td><td></td></tr><tr><td>Slot adjustment for a press fit</td><td></td></tr></tbody></table>
 <p><em><em>Shaded column is yours to fill in.</em></em></p>
@@ -57,6 +80,73 @@
 <ul><li>Your completed kerf and settings card.</li><li>Your measured kerf value, plus your prediction next to the actual.</li><li><strong>One sentence — </strong>which laser you’d choose for a wood part versus a colored-acrylic part, and why.</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Explains how the laser works (cut/score/engrave, kerf) and which machine fits which material</td><td>6</td></tr><tr><td>Kerf measured correctly (drawn − measured, calipered)</td><td>7</td></tr><tr><td>Kerf and settings card completed as a usable reference</td><td>4</td></tr><tr><td>Slot-compensation reasoning correct</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "What is the <strong>kerf<\/strong>?",
+  "options": [
+   "The laser's power setting",
+   "The width of material the beam burns away",
+   "The thickness of the plywood",
+   "A type of acrylic"
+  ],
+  "answer": 1,
+  "why": "The beam has width, so it removes a thin strip along every cut. That strip is the kerf.",
+  "hint": "It's about the beam's width."
+ },
+ {
+  "q": "A square is drawn at 20.0 mm and measures 19.8 mm after cutting. What is the kerf?",
+  "options": [
+   "0.2 mm",
+   "19.8 mm",
+   "20.0 mm",
+   "39.8 mm"
+  ],
+  "answer": 0,
+  "why": "Kerf = drawn − measured = 20.0 − 19.8 = 0.2 mm.",
+  "hint": "Drawn minus measured."
+ },
+ {
+  "q": "You need to cut <strong>clear acrylic<\/strong>. Which laser?",
+  "options": [
+   "The Flux Ador",
+   "The Dremel LC40",
+   "Either one",
+   "Neither"
+  ],
+  "answer": 1,
+  "why": "Only the LC40 (CO₂) cuts clear and colored acrylic. The Ador can't.",
+  "hint": "One machine is the only choice for clear acrylic."
+ },
+ {
+  "q": "Which material is <strong>never<\/strong> allowed in the laser?",
+  "options": [
+   "Plywood",
+   "Cardstock",
+   "PVC or vinyl",
+   "Leather"
+  ],
+  "answer": 2,
+  "why": "PVC and vinyl release toxic gas when lasered. Approved materials only.",
+  "hint": "It releases toxic gas."
+ },
+ {
+  "q": "A laser-cut <strong>hole<\/strong> comes out ___ than drawn.",
+  "options": [
+   "Smaller",
+   "Bigger",
+   "Exactly the same",
+   "Square"
+  ],
+  "answer": 1,
+  "why": "The beam removes material from the edge of the hole, so it grows by the kerf. Parts shrink; holes grow.",
+  "hint": "Try the kerf slider above."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Vector vs. raster</span><span class="term">Kerf</span></div>

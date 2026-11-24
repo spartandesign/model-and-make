@@ -37,7 +37,22 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch05-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
+
+<!--enh:video-->
+      <h2>Watch first: design, print, measure</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch05-cube-walkthrough-poster.jpg" aria-label="Narrated walkthrough: the design-print-measure loop, measuring a calibration cube, computing deviation, and leaving clearance. Captions are on screen.">
+          <source src="media/ch05-cube-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch05-cube-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (0:56). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>This week you make your first 3D print, and you answer the question every maker asks: did the machine make the size I asked for? You design your part in class and submit it by the end of Tuesday. Your teacher prints it on Wednesday. On Thursday, you measure what came back. Model a cube that&#x27;s exactly two inches on every side. When it&#x27;s printed, caliper all three directions: width, depth, and height. Subtract to find the deviation: measured, minus designed. Height is often a little short, because the first layer gets squished into the bed. No printer is perfect, and that&#x27;s okay. A hole the exact size of its peg won&#x27;t fit. Make the hole a little bigger, and it fits. That extra room is called clearance, and your measured deviation helps you choose it.</p></details>
+<!--/enh:video-->
 <h2>Block 1 — Model and submit your cube</h2>
 <ul><li><strong>New part. </strong>Create a new Onshape document named “Calibration Cube – [Your Name]” and confirm units are inches.</li><li><strong>Sketch the base. </strong>On the Top plane, sketch a square and dimension it 2.000 in × 2.000 in.</li><li><strong>Extrude. </strong>Extrude the square 2.000 in to make a cube.</li><li><strong>Verify before you submit. </strong>Use the Measure tool to check all three dimensions read 2.000 in — this is your “designed” number.</li><li><strong>Export and submit. </strong>Export the part as a print file (STL or 3MF) and submit it with your name in the filename.</li></ul>
 <p>Between sessions, your teacher runs the print queue — you don’t touch the printer. Submit by the end of Tuesday’s block. Your teacher prints on Wednesday, so your cube will be waiting on Thursday.</p>
@@ -46,6 +61,12 @@
 <h2>Accuracy log</h2>
 <table class="dtable"><tbody><tr><th>Axis</th><th>Designed</th><th>Measured (0.001 in)</th><th>Deviation (meas − des)</th></tr><tr><td>X — width</td><td>2.000 in</td><td></td><td></td></tr><tr><td>Y — depth</td><td>2.000 in</td><td></td><td></td></tr><tr><td>Z — height</td><td>2.000 in</td><td></td><td></td></tr></tbody></table>
 <p><em><em>Shaded columns are yours to fill in.</em></em></p>
+
+<!--enh:interactive-->
+      <h2>Try it: deviation calculator</h2>
+      <p>Type your three caliper readings. The chart shows each deviation (measured − designed). The green band is ±0.005 in. Try it with these sample numbers first: 2.004, 2.003, 1.992.</p>
+      <div class="sim devsim" data-designed="2.000"></div>
+<!--/enh:interactive-->
 <h2>What you’re seeing: accuracy vs. tolerance</h2>
 <p>Your cube is close to 2.000 in but almost certainly not exact — no machine is perfect. A few reasons why:</p>
 <ul><li><strong>Material shrinkage — </strong>plastic shrinks slightly as it cools, pulling dimensions in.</li><li><strong>First-layer squish (“elephant’s foot”) — </strong>the bottom layer is pressed into the bed, so the base can read a touch wide and the height a touch short.</li><li><strong>Nozzle and flow — </strong>tiny differences in how much plastic comes out add up over a 2-inch part.</li></ul>
@@ -54,6 +75,72 @@
 <ul><li>A photo of your printed cube.</li><li>Your completed accuracy log (all three axes plus deviations).</li><li><strong>One sentence — </strong>which axis deviated most, and your best guess why.</li><li><strong>One sentence — </strong>if you had to design a hole for a 2.000 in peg on this printer, would you make it exactly 2.000 in? Why or why not?</li></ul>
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Cube modeled to 2.000 in on all axes and submitted on time</td><td>6</td></tr><tr><td>Accuracy log complete — measured to 0.001 in, deviations computed correctly</td><td>8</td></tr><tr><td>Reflection: most-deviated axis + plausible reason</td><td>3</td></tr><tr><td>Reflection: tolerance reasoning for the peg/hole question</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "How do you find the <strong>deviation<\/strong>?",
+  "options": [
+   "Designed − measured",
+   "Measured − designed",
+   "Measured + designed",
+   "Measured ÷ designed"
+  ],
+  "answer": 1,
+  "why": "Deviation = measured − designed. A plus sign means the part came out big. A minus sign means it came out small.",
+  "hint": "Start with what you measured."
+ },
+ {
+  "q": "Your cube's height measures <strong>1.992 in<\/strong>. It was designed at 2.000 in. What is the deviation?",
+  "options": [
+   "+0.008 in",
+   "−0.008 in",
+   "1.992 in",
+   "0.992 in"
+  ],
+  "answer": 1,
+  "why": "1.992 − 2.000 = −0.008 in. The cube came out 8 thousandths short.",
+  "hint": "Measured − designed. Is it bigger or smaller than 2.000?"
+ },
+ {
+  "q": "Why is printed height often a little short?",
+  "options": [
+   "The caliper is broken",
+   "The first layer gets squished into the bed",
+   "Plastic grows as it cools",
+   "The file was in millimeters"
+  ],
+  "answer": 1,
+  "why": "The first layer is pressed into the bed (elephant's foot), so height can read short and the base a bit wide.",
+  "hint": "Think about the very bottom layer."
+ },
+ {
+  "q": "You need a hole for a <strong>2.000 in<\/strong> peg on this printer. How big should the hole be?",
+  "options": [
+   "Exactly 2.000 in",
+   "A little smaller than 2.000 in",
+   "A little bigger than 2.000 in",
+   "It doesn't matter"
+  ],
+  "answer": 2,
+  "why": "A hole the exact size of the peg is too tight. Add a little clearance so it fits.",
+  "hint": "What happens when hole = peg?"
+ },
+ {
+  "q": "What is <strong>tolerance<\/strong>?",
+  "options": [
+   "How fast the printer runs",
+   "The range of “close enough” where a part still works",
+   "The color of the plastic",
+   "The weight of the part"
+  ],
+  "answer": 1,
+  "why": "Accuracy is how close you got. Tolerance is how close you need to be for the part to still work.",
+  "hint": "It's about “close enough.”"
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Tolerance</span><span class="term">Interference</span><span class="term">Slop</span><span class="term">Deviation</span><span class="term">FDM</span><span class="term">PLA</span><span class="term">Slicer</span><span class="term">Single-operator loop</span></div>

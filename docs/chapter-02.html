@@ -37,13 +37,34 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch02-listen.mp3" data-min="3"></div>
+<!--/enh:listen-->
 
+
+<!--enh:video-->
+      <h2>Watch first: three views and dimensions</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch02-views-walkthrough-poster.jpg" aria-label="Narrated walkthrough: an L-shaped block drawn in front, top, and right views, then dimensioned. Captions are on screen.">
+          <source src="media/ch02-views-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch02-views-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (0:58). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>A model in your head only helps you. A drawing tells everyone else exactly how to build and measure your part. Here&#x27;s a simple L-shaped block. Engineers describe it from three sides: the front, the top, and the right side. The front view shows the most important face. The top view goes directly above it. The right side view goes directly to its right. Lined up like this, the views share edges, so sizes match from one view to the next. Now add dimensions. Thin extension lines show exactly what each number measures. Give each size only once. If the same size shows up on another view, cross it out. And always write the units. Finish with a title block: the part name, your name, the date, and the units. Three views, one isometric view, and every size once. Now anyone can build it.</p></details>
+<!--/enh:video-->
 <h2>The three standard views</h2>
 <p>Engineers describe a 3D object with three flat views, laid out in a fixed arrangement (third-angle projection):</p>
 <ul><li><strong>Front </strong>— the most descriptive face of the object.</li><li><strong>Top </strong>— placed directly above the front view.</li><li><strong>Right side </strong>— placed directly to the right of the front view.</li></ul>
 <p>Lined up this way, the views share edges, so a measurement on one lines up with the others.</p>
 <h2>The isometric view</h2>
 <p>Add one isometric view — the object drawn at an angle so it looks 3D — so a reader can see the whole shape at a glance. The three flat views give the exact sizes; the isometric shows how they go together.</p>
+
+<!--enh:interactive-->
+      <h2>Try it: which view is it?</h2>
+      <p>Look at the 3D block. Then pick the drawing that matches the view it asks for. Watch out: one choice is often flipped left-to-right.</p>
+      <div class="sim viewsim"></div>
+<!--/enh:interactive-->
 <h2>Dimensioning rules</h2>
 <ul><li><strong>Use extension and dimension lines. </strong>Thin lines that show exactly which feature a number describes.</li><li><strong>Dimension each feature once. </strong>Don’t repeat a size on multiple views — pick the clearest place and put it there.</li><li><strong>Show overall sizes and feature sizes. </strong>The object’s overall length, width, and height, plus every hole, slot, or step.</li><li><strong>State the units. </strong>Note whether the drawing is in inches or millimeters.</li><li><strong>Keep it readable. </strong>Numbers off the part, lines uncluttered, nothing left to guess.</li></ul>
 <h2>Do it — draw a real object</h2>
@@ -53,6 +74,72 @@
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Three standard views, correctly laid out (third-angle)</td><td>4</td></tr><tr><td>Isometric view included and readable</td><td>2</td></tr><tr><td>Dimensions complete and unambiguous (overall + features, each once)</td><td>3</td></tr><tr><td>Titled, units noted, neat</td><td>1</td></tr><tr><td>Total</td><td>10</td></tr></tbody></table>
 <p><em>Dimensioning is the language of a working drawing. The exact rules you practice here come back in Week 11 as a CAD drawing of your deck, and again in the capstone when your group documents its park sections.</em></p>
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "In a standard drawing, where does the <strong>top view<\/strong> go?",
+  "options": [
+   "Directly above the front view",
+   "Directly to the right of the front view",
+   "Below the front view",
+   "Anywhere on the page"
+  ],
+  "answer": 0,
+  "why": "The top view sits directly above the front view, so the two views share the same width.",
+  "hint": "Third-angle layout: think about where you would stand to look down on it."
+ },
+ {
+  "q": "Where does the <strong>right side view<\/strong> go?",
+  "options": [
+   "Directly above the front view",
+   "Directly to the right of the front view",
+   "To the left of the front view",
+   "Inside the title block"
+  ],
+  "answer": 1,
+  "why": "The right side view sits directly to the right of the front view, so they share the same height.",
+  "hint": "Its name tells you which side it goes on."
+ },
+ {
+  "q": "A block's 3.00 in length shows up on both the front and top views. How many times should you dimension it?",
+  "options": [
+   "Once, on the clearest view",
+   "Twice, once on each view",
+   "Three times, to be safe",
+   "You don't need to dimension it"
+  ],
+  "answer": 0,
+  "why": "Dimension each size once. Repeated dimensions clutter the drawing and can disagree if one is changed.",
+  "hint": "The rule is “each feature once.”"
+ },
+ {
+  "q": "What does the <strong>isometric view<\/strong> add to a drawing?",
+  "options": [
+   "The exact sizes of every feature",
+   "A 3D picture so readers see the whole shape at a glance",
+   "A replacement for the three flat views",
+   "The inside of the part"
+  ],
+  "answer": 1,
+  "why": "The isometric shows how the shape goes together. The three flat views carry the exact sizes.",
+  "hint": "Which view looks 3D?"
+ },
+ {
+  "q": "Which belongs in the <strong>title block<\/strong>?",
+  "options": [
+   "Only your grade",
+   "A list of every material in the room",
+   "The part name, your name, the date, and the units",
+   "Nothing. Title blocks are optional"
+  ],
+  "answer": 2,
+  "why": "The title block tells the reader what the part is, who drew it, when, and in what units.",
+  "hint": "What would someone need to know before reading the numbers?"
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Orthographic views</span><span class="term">Isometric view</span><span class="term">Title block</span></div>
