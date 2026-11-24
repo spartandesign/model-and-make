@@ -36,6 +36,11 @@ const BOOK = [
     { n: 14, title: "Teamwork in Onshape", file: "chapter-14.html" },
     { n: 15, title: "Capstone Skate Park", file: "chapter-15.html" },
   ]},
+  { unit: "Extension · CAD for Robotics", chapters: [
+    { n: "E1", title: "Robot bracket", file: "extension-1.html" },
+    { n: "E2", title: "Gear ratios", file: "extension-2.html" },
+    { n: "E3", title: "Four-bar lift", file: "extension-3.html" },
+  ]},
   { unit: "Reference", chapters: [
     { n: "GL", title: "Glossary", file: "glossary.html" },
   ]},
