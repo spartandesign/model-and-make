@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 7 · Design for Printing — Model &amp; Make</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-chapter="7">
+
+<header class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__mark">DM&amp;ED · Onshape</span>
+    <span class="topbar__title">Model &amp; Make</span>
+    <span class="topbar__school">Mary R. Stauffer MS · Downey USD</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle contents">Contents</button>
+  </div>
+</header>
+
+<div class="book">
+  <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
+  <main class="main">
+
+    <div class="chead">
+      <div class="chead__in">
+        <div class="chead__num">07</div>
+        <div>
+          <p class="chead__eyebrow">Unit 3 · The Fingerboard · Week 8</p>
+          <h1 class="chead__title">Design for Printing</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="lede">
+      <p><strong>How to design so it actually prints · work solo or in pairs.</strong> You can model almost anything in Onshape now — but a part that looks perfect on screen can still fail on the printer: weak in the wrong direction, full of messy supports, or with features too small to form. This week you learn the rules that make a part print well, then use them to plan the fingerboard deck you print next week. The whole class shares the printers, so a deck designed wrong wastes a print and costs someone a turn in the queue — getting the design right here is what keeps Week 9 on track.</p>
+    </div>
+
+    <article class="prose wrap">
+
+<h2>The five rules of design for printing</h2>
+<ul><li><strong>Orientation = strength. </strong>A print is built in layers from the bed up, and it’s weakest between layers. Place the part so the layers run along the direction it will be stressed — print the deck flat so the layers run along it, not across the kicktail.</li><li><strong>Avoid supports. </strong>The printer can’t lay plastic on thin air; any surface overhanging more than about 45° from vertical needs support material that wastes plastic and leaves a rough surface. Keep big flat bottoms on the bed and use angled chamfers instead of sharp overhangs — aim to print with no supports at all.</li><li><strong>Mind the minimum feature size. </strong>The nozzle is about 0.4 mm wide, so very thin walls, pegs, or raised text won’t form. Keep any feature at least ~1 mm thick. (Printers think in millimeters; we design in inches — convert when you need to: 1 in = 25.4 mm.)</li><li><strong>First layer and bed contact. </strong>The first layer squishes onto the bed, so a big flat bottom sticks well (and may read a touch wide — the “elephant’s foot” from your Week 5 cube). A tiny contact area can pop loose mid-print; add a brim to hold it down.</li><li><strong>Clearance for fit. </strong>Two parts that must fit can’t be modeled the same size. Make the hole bigger than the peg by a clearance, and size that clearance from your measured Week 5 deviation plus a little room to slide. Too tight = interference (won’t go on); too loose = slop.</li></ul>
+<p><em>Clearance is the rule that carries the rest of the course: it’s how your Week 9 deck holes fit the calipered trucks, and how the capstone sections snap to one connection standard. Also remember the build area: each capstone section must fit ≤ 180 mm (the A1 Mini bed, so it can print on any of our printers) — if a part is bigger, split it into sections that connect.</em></p>
+<h2>Apply it — prep your fingerboard deck</h2>
+<p>Use the five rules to plan the deck you’ll model and print in Week 9. Fill the checklist below — it’s your deliverable and your build plan.</p>
+<table class="dtable"><tbody><tr><th>Rule</th><th>Question to answer</th><th>My plan</th></tr><tr><td>1 Orientation</td><td>How will the deck sit on the bed, and why?</td><td></td></tr><tr><td>2 Supports</td><td>Any overhang steeper than ~45°? How will you avoid supports?</td><td></td></tr><tr><td>3 Min feature</td><td>Is any part of the deck thinner than ~1 mm? How will you fix it?</td><td></td></tr><tr><td>4 First layer</td><td>Big flat base, or do you need a brim?</td><td></td></tr><tr><td>5 Clearance</td><td>Truck bolt holes: how much bigger than the bolt, based on your Wk 5 deviation?</td><td></td></tr><tr><td>Fits the plate</td><td>Does the deck fit the bed?</td><td></td></tr></tbody></table>
+<p><em><em>Shaded column is yours to fill in.</em></em></p>
+<h2>What to submit</h2>
+<ul><li>Your completed design-for-printing checklist (all six rows, with reasoning).</li><li>A screenshot of your deck model shown in its print orientation.</li><li><strong>One sentence — </strong>the clearance you’ll use for the truck holes, and the Week 5 number you based it on.</li></ul>
+<h2>How it’s graded</h2>
+<table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Checklist complete with reasoning (not one-word answers)</td><td>8</td></tr><tr><td>Orientation choice correct and justified (flat / layers along the deck)</td><td>4</td></tr><tr><td>Clearance value is reasonable and tied to a measured deviation</td><td>5</td></tr><tr><td>Print-orientation screenshot submitted</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
+      <h2>Key terms</h2>
+      <div class="terms"><span class="term">Clearance</span></div>
+      <p>See the <a href="glossary.html">Glossary</a> for what each term means.</p>
+    </article>
+
+    <nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+
+  </main>
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>

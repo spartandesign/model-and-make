@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 5 · First Print: Calibration Cube — Model &amp; Make</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-chapter="5">
+
+<header class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__mark">DM&amp;ED · Onshape</span>
+    <span class="topbar__title">Model &amp; Make</span>
+    <span class="topbar__school">Mary R. Stauffer MS · Downey USD</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle contents">Contents</button>
+  </div>
+</header>
+
+<div class="book">
+  <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
+  <main class="main">
+
+    <div class="chead">
+      <div class="chead__in">
+        <div class="chead__num">05</div>
+        <div>
+          <p class="chead__eyebrow">Unit 2 · CAD in Onshape · Week 5</p>
+          <h1 class="chead__title">First Print: Calibration Cube</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="lede">
+      <p><strong>Your first design → print → measure loop · work solo.</strong> This is your first 3D print — and the first time the course’s full rhythm runs end to end: you design a part in class, the printer makes it between sessions, and you measure it next time. Your job is a solid cube exactly 2.000 in on every side. Then you answer the question every maker asks — did the machine make the size I asked for? That question is where tolerance, the idea behind the whole capstone, begins.</p>
+    </div>
+
+    <article class="prose wrap">
+
+<h2>Block 1 — Model and submit your cube</h2>
+<ul><li><strong>New part. </strong>Create a new Onshape document named “Calibration Cube – [Your Name]” and confirm units are inches.</li><li><strong>Sketch the base. </strong>On the Top plane, sketch a square and dimension it 2.000 in × 2.000 in.</li><li><strong>Extrude. </strong>Extrude the square 2.000 in to make a cube.</li><li><strong>Verify before you submit. </strong>Use the Measure tool to check all three dimensions read 2.000 in — this is your “designed” number.</li><li><strong>Export and submit. </strong>Export the part as a print file (STL or 3MF) and submit it with your name in the filename.</li></ul>
+<p>Between sessions, your teacher runs the print queue — you don’t touch the printer. Submit by the end of Tuesday’s block. Your teacher prints on Wednesday, so your cube will be waiting on Thursday.</p>
+<h2>Block 2 — Measure and log</h2>
+<ul><li><strong>Measure three axes. </strong>With calipers, measure the cube’s width (X), depth (Y), and height (Z) to 0.001 in. Measure across the flat faces, not the rounded edges.</li><li><strong>Fill the accuracy log. </strong>Record each measured value and compute the deviation (measured − designed).</li><li><strong>Compare axes. </strong>Which axis is off the most? Height (Z) often differs from width and depth — note what you find.</li></ul>
+<h2>Accuracy log</h2>
+<table class="dtable"><tbody><tr><th>Axis</th><th>Designed</th><th>Measured (0.001 in)</th><th>Deviation (meas − des)</th></tr><tr><td>X — width</td><td>2.000 in</td><td></td><td></td></tr><tr><td>Y — depth</td><td>2.000 in</td><td></td><td></td></tr><tr><td>Z — height</td><td>2.000 in</td><td></td><td></td></tr></tbody></table>
+<p><em><em>Shaded columns are yours to fill in.</em></em></p>
+<h2>What you’re seeing: accuracy vs. tolerance</h2>
+<p>Your cube is close to 2.000 in but almost certainly not exact — no machine is perfect. A few reasons why:</p>
+<ul><li><strong>Material shrinkage — </strong>plastic shrinks slightly as it cools, pulling dimensions in.</li><li><strong>First-layer squish (“elephant’s foot”) — </strong>the bottom layer is pressed into the bed, so the base can read a touch wide and the height a touch short.</li><li><strong>Nozzle and flow — </strong>tiny differences in how much plastic comes out add up over a 2-inch part.</li></ul>
+<p><em>The big idea — tolerance: accuracy is how close your part came to the number you designed; tolerance is the range of “close enough” a part can be and still work. In the capstone, 12 groups’ park sections must snap to one connection standard — too tight = interference, too loose = slop. Knowing your printer’s typical deviation, measured here, is how you pick a tolerance that fits.</em></p>
+<h2>What to submit</h2>
+<ul><li>A photo of your printed cube.</li><li>Your completed accuracy log (all three axes plus deviations).</li><li><strong>One sentence — </strong>which axis deviated most, and your best guess why.</li><li><strong>One sentence — </strong>if you had to design a hole for a 2.000 in peg on this printer, would you make it exactly 2.000 in? Why or why not?</li></ul>
+<h2>How it’s graded</h2>
+<table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Cube modeled to 2.000 in on all axes and submitted on time</td><td>6</td></tr><tr><td>Accuracy log complete — measured to 0.001 in, deviations computed correctly</td><td>8</td></tr><tr><td>Reflection: most-deviated axis + plausible reason</td><td>3</td></tr><tr><td>Reflection: tolerance reasoning for the peg/hole question</td><td>3</td></tr><tr><td>Total</td><td>20</td></tr></tbody></table>
+      <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
+      <h2>Key terms</h2>
+      <div class="terms"><span class="term">Tolerance</span><span class="term">Interference</span><span class="term">Slop</span><span class="term">Deviation</span><span class="term">FDM</span><span class="term">PLA</span><span class="term">Slicer</span><span class="term">Single-operator loop</span></div>
+      <p>See the <a href="glossary.html">Glossary</a> for what each term means.</p>
+    </article>
+
+    <nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+
+  </main>
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>
