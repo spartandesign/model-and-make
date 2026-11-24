@@ -37,9 +37,33 @@
     </div>
 
     <article class="prose wrap">
+<!--enh:listen-->
+      <div class="listen" data-src="media/ch01-listen.mp3" data-min="2"></div>
+<!--/enh:listen-->
 
+
+
+<!--enh:video-->
+      <h2>Watch first: measure like an engineer</h2>
+      <figure class="video">
+        <video controls preload="metadata" playsinline poster="media/ch01-calipers-walkthrough-poster.jpg" aria-label="Narrated walkthrough of the parts of a caliper, zeroing, measuring, reading a dial caliper, switching units, and checking your work. Captions are on screen.">
+          <source src="media/ch01-calipers-walkthrough.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/ch01-calipers-walkthrough.mp4">Download it here</a>.
+        </video>
+        <figcaption>Narrated walkthrough (about 1¾ minutes). Captions are built into the video.</figcaption>
+      </figure>
+      <details class="transcript"><summary>Read the transcript</summary><p>Everything you build in this class starts with a measurement. A ruler gets you close. A caliper gets you to one thousandth of an inch. A caliper measures three ways. The outside jaws grip thickness and diameter. The inside jaws reach into openings. The depth rod slides out of the end to measure how deep a hole or step is. And the readout shows the number. Before you measure, close the jaws all the way. If the screen doesn&#x27;t read zero, press the zero button. Now it reads zero point zero zero zero. Open the jaws and set the part between them. Sit the jaws square, across the flat faces, and close them gently. Don&#x27;t crank them. Read the number, and write it down with its units. A dial caliper is read in two steps. First, the bar. The slider is past one point two inches. Then, the dial. The needle points to thirty-seven. That means thirty-seven thousandths. Add them. One point two, plus zero point zero three seven, is one point two three seven inches. Need millimeters? Press the units button. Zero point five one two inches becomes thirteen point zero zero millimeters, because one inch is twenty-five point four millimeters. Then, check your work. Measure again, or trade with a partner. If your readings don&#x27;t match, measure again until you agree on the true value. Remember. Zero first. Use the right jaws. Square, gentle, and across flat faces. Bar plus dial on a dial caliper. And always write the units.</p></details>
+<!--/enh:video-->
 <h2>Meet your calipers</h2>
 <ul><li><strong>Dial caliper. </strong>Outside jaws for thickness and diameter, inside jaws for openings, and a depth rod. Read the whole number off the bar, then the fine number off the dial — together they give you 0.001 in.</li><li><strong>Digital caliper. </strong>Same jaws, but the measurement shows on a screen. Press ZERO with the jaws fully closed so it reads 0.000, and use the in/mm button to switch units.</li><li><strong>Good technique (both). </strong>Close the jaws gently — don’t crank them — sit them square on the feature, and measure across flat faces, not rounded edges or corners.</li></ul>
+
+
+<!--enh:interactive-->
+      <h2>Try it: read a dial caliper</h2>
+      <p>The dial caliper is the tricky one, so practice here first. Drag the slider to move the jaw and watch the bar and dial change. Then press <strong>New challenge</strong> and read it yourself.</p>
+      <div class="sim dialsim" id="ch01dial"></div>
+      <div class="card card--note"><p><strong>The rule:</strong> bar first, then dial. The bar gives inches and tenths. The dial gives thousandths. Add them together.</p></div>
+<!--/enh:interactive-->
 <h2>Measure and log</h2>
 <ul><li><strong>Gather objects. </strong>Get the set of objects from your teacher (or pick several small classroom objects).</li><li><strong>Measure to 0.001 in. </strong>For each object, measure the feature listed in the log — a thickness, a diameter, a depth, or an opening — using the right part of the caliper.</li><li><strong>Check it. </strong>Re-measure each object, or trade with a partner and compare. If your readings differ, measure again and agree on the true value — that’s how real metrology works.</li><li><strong>Try the toggle. </strong>On the digital caliper, switch one measurement to millimeters and record it too — you’ll work in mm when you measure fingerboard parts in Week 9.</li></ul>
 <table class="dtable"><tbody><tr><th>Object</th><th>Feature to measure</th><th>My reading (in)</th><th>Check (in or mm)</th></tr><tr><td></td><td>Thickness</td><td></td><td></td></tr><tr><td></td><td>Outside diameter</td><td></td><td></td></tr><tr><td></td><td>Depth or step</td><td></td><td></td></tr><tr><td></td><td>Inside opening</td><td></td><td></td></tr><tr><td></td><td>Your choice</td><td></td><td></td></tr><tr><td></td><td>Your choice</td><td></td><td></td></tr></tbody></table>
@@ -49,6 +73,85 @@
 <h2>How it’s graded</h2>
 <table class="dtable"><tbody><tr><th>What you do</th><th>Points</th></tr><tr><td>Log complete — every row measured to 0.001 in, using the right caliper function</td><td>5</td></tr><tr><td>Readings accurate and technique correct (jaws square, across flats)</td><td>3</td></tr><tr><td>Reflection sentences answered</td><td>2</td></tr><tr><td>Total</td><td>10</td></tr></tbody></table>
 <p><em>This is the start of the tolerance spine the whole course runs on: a part is only as good as your ability to measure it. The in/mm toggle returns in Week 9, and these same calipers check every print and laser cut you make.</em></p>
+      
+      
+<!--enh:quiz-->
+      <h2>Check your understanding</h2>
+      <div class="quiz"><script type="application/json">[
+ {
+  "q": "On a dial caliper, the bar reads <strong>0.8<\/strong> and the dial needle points to <strong>45<\/strong>. What is the reading?",
+  "options": [
+   "0.845 in",
+   "0.8045 in",
+   "8.45 in",
+   "0.450 in"
+  ],
+  "answer": 0,
+  "why": "The bar gives tenths (0.8). The dial gives thousandths (45 → 0.045). 0.8 + 0.045 = 0.845 in.",
+  "hint": "The dial counts thousandths. A 45 on the dial means 0.045."
+ },
+ {
+  "q": "You pick up a digital caliper. What should you do <em>before<\/em> you measure?",
+  "options": [
+   "Open the jaws all the way",
+   "Close the jaws and press ZERO",
+   "Switch it to millimeters",
+   "Tap the jaws on the table"
+  ],
+  "answer": 1,
+  "why": "Closing the jaws and pressing ZERO makes the screen read 0.000, so every measurement starts from true zero.",
+  "hint": "What should the screen read when the jaws are fully closed?"
+ },
+ {
+  "q": "You need to measure the size of the <strong>hole<\/strong> in a washer. Which part do you use?",
+  "options": [
+   "The outside jaws",
+   "The depth rod",
+   "The inside jaws",
+   "The beam scale only"
+  ],
+  "answer": 2,
+  "why": "The inside jaws reach into an opening and push outward against its sides.",
+  "hint": "You're measuring an opening, not the outside of the part."
+ },
+ {
+  "q": "You read <strong>0.512 in<\/strong>. Your partner reads <strong>0.518 in<\/strong> for the same part. What should you do?",
+  "options": [
+   "Use your number, because you measured first",
+   "Average them to 0.515 and move on",
+   "Use the bigger number to be safe",
+   "Measure again, check the jaws are square, and agree on the true value"
+  ],
+  "answer": 3,
+  "why": "When readings don't match, something went wrong: tipped jaws, a rounded edge, or too much squeeze. Measure again until you agree.",
+  "hint": "Real engineers don't guess. What would find the mistake?"
+ },
+ {
+  "q": "1 inch = 25.4 mm. About how many millimeters is <strong>0.500 in<\/strong>?",
+  "options": [
+   "12.7 mm",
+   "5.0 mm",
+   "25.4 mm",
+   "50.8 mm"
+  ],
+  "answer": 0,
+  "why": "Half an inch is half of 25.4 mm: 0.500 × 25.4 = 12.7 mm.",
+  "hint": "0.500 in is half an inch. What's half of 25.4?"
+ },
+ {
+  "q": "Why should the jaws sit across <strong>flat faces<\/strong>, not on a rounded edge?",
+  "options": [
+   "Flat faces are easier to see",
+   "On a rounded edge the jaws can tip, so the number is wrong",
+   "Calipers can't touch curved parts",
+   "It saves the battery"
+  ],
+  "answer": 1,
+  "why": "On a curve or corner, the jaws can sit at an angle. A tipped jaw reads bigger than the real size.",
+  "hint": "Think about what happens to the jaws on a curve."
+ }
+]</script></div>
+<!--/enh:quiz-->
       <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Build your OneNote page first. Then submit the graded version on Canvas by Thursday at 11:59 pm.</p></div>
       <h2>Key terms</h2>
       <div class="terms"><span class="term">Caliper</span></div>
@@ -61,5 +164,6 @@
 </div>
 
 <script src="nav.js"></script>
+<script src="learn.js"></script>
 </body>
 </html>

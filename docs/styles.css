@@ -458,3 +458,43 @@ a.ext::after{content:"\2197";font-size:.78em;margin-left:2px;color:var(--blue);v
 .hero .cta{margin-top:20px;}
 .dtable{max-width:100%;}
 .prose .tablewrap{overflow-x:auto;}
+
+/* ---------- Listen bar ---------- */
+.listen{margin:18px 0 6px;padding:12px 14px;background:var(--soft);border:1px solid var(--soft-line);border-radius:12px;}
+.listen__head{display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--navy);}
+.listen__len{margin-left:auto;font-family:var(--font-mono);font-size:12px;color:var(--gray);}
+.listen audio{width:100%;}
+.listen__speed{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px;font-size:14px;color:var(--gray);}
+.listen__speed button{font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--soft-line);background:#fff;border-radius:999px;cursor:pointer;color:var(--ink);}
+.listen__speed button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* ---------- Self-check quiz ---------- */
+.quiz{margin:18px 0 26px;}
+.quiz__intro{color:var(--gray);font-size:15px;}
+.quiz__q{border:1px solid var(--rule);background:var(--paper);border-radius:12px;padding:12px 14px 10px;margin:0 0 14px;}
+.quiz__q legend{font-weight:700;color:var(--ink);padding:0 4px;font-size:17px;line-height:1.4;}
+.quiz__n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;margin-right:4px;vertical-align:1px;}
+.quiz__opts{display:grid;gap:8px;margin:8px 0 4px;}
+.quiz__opt{display:flex;gap:10px;align-items:flex-start;text-align:left;font:inherit;font-size:16px;line-height:1.4;padding:10px 12px;border:1.5px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink);cursor:pointer;}
+.quiz__opt:hover:not(:disabled){border-color:var(--blue);background:var(--soft);}
+.quiz__l{flex:none;font-family:var(--font-mono);font-weight:700;color:var(--blue);}
+.quiz__opt.is-right{border-color:var(--green-ink);background:var(--green-bg);}
+.quiz__opt.is-right .quiz__l{color:var(--green-ink);}
+.quiz__opt.is-wrong{border-color:#B42318;background:#FDECEA;opacity:.75;text-decoration:line-through;}
+.quiz__opt:disabled{cursor:default;}
+.quiz__fb{margin:6px 0 2px;font-size:15px;min-height:0;}
+.quiz__fb.is-right{padding:8px 10px;background:var(--green-bg);border-radius:8px;}
+.quiz__fb.is-right strong{color:var(--green-ink);}
+.quiz__fb.is-wrong{padding:8px 10px;background:var(--amber-bg);border-radius:8px;}
+.quiz__fb.is-wrong strong{color:var(--amber-ink);}
+.quiz__foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.quiz__score{font-weight:700;color:var(--navy);}
+
+/* ---------- Dial caliper practice ---------- */
+.dialsim .sim__bar label{font-size:14.5px;}
+.dialsim__range{flex:1;min-width:160px;accent-color:var(--orange);}
+.dialsim__in{font:inherit;font-family:var(--font-mono);font-size:16px;padding:5px 8px;border:1.5px solid var(--rule);border-radius:8px;width:7em;}
+.dialsim__practice{border-top:1px dashed var(--rule);padding-top:10px;}
+.transcript{margin:-14px 0 24px;font-size:15px;}
+.transcript summary{cursor:pointer;color:var(--blue);font-weight:600;}
+.transcript p{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;margin:8px 0 0;}
