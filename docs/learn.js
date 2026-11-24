@@ -575,7 +575,7 @@
 
   // ---------- Pre-flight checker ----------
   $$(".preflight").forEach(el => {
-    const items = ["Pegs and sockets match the class standard and clearance", "Largest flat face on the plate, no supports needed", "Nothing thinner than about 1 mm", "Size checked in the slicer, in mm"];
+    const items = ["Pegs and sockets match the class standard and clearance", "Largest flat face on the plate, no supports needed", "Nothing thinner than about 1 mm", "Size checked in Onshape with the Measure tool, in mm"];
     el.innerHTML = `<div class="preflight__dims"><label>Length (mm)<input type="text" inputmode="decimal" data-d="0" value="150"></label><label>Width (mm)<input type="text" inputmode="decimal" data-d="1" value="96"></label><label>Height (mm)<input type="text" inputmode="decimal" data-d="2" value="40"></label>
       <label class="preflight__name">File name<input type="text" class="preflight__f" value="Team07_Ramp.3mf"></label></div>
       <div class="preflight__list">${items.map((t, i) => `<label><input type="checkbox" data-i="${i}"> ${t}</label>`).join("")}</div>

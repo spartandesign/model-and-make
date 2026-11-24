@@ -9,6 +9,7 @@ const BOOK = [
   { unit: "Getting Started", chapters: [
     { n: "GS", title: "Start Here", file: "start-here.html" },
     { n: "LAB", title: "The Lab & Safety", file: "lab.html" },
+    { n: "DEV", title: "Laptop or iPad?", file: "devices.html" },
   ]},
   { unit: "Unit 1 · Foundations: Measure & Sketch", chapters: [
     { n: 1, title: "Measurement & Calipers", file: "chapter-01.html" },
