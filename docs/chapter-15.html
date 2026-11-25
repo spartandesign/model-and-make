@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chapter 15 · Capstone Skate Park — Model &amp; Make</title>
+<title>Chapter 15 · CNC Router: Carve a Park Element — Model &amp; Make</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-chapter="15">
@@ -26,132 +26,139 @@
       <div class="chead__in">
         <div class="chead__num">15</div>
         <div>
-          <p class="chead__eyebrow">Unit 5 · Capstone: Skate Park · Weeks 16–20</p>
-          <h1 class="chead__title">Capstone Skate Park</h1>
+          <p class="chead__eyebrow">Unit 5 · Capstone: Skate Park · Week 16</p>
+          <h1 class="chead__title">CNC Router: Carve a Park Element</h1>
         </div>
       </div>
     </div>
 
     <div class="lede">
-      <p><strong>12 teams, one park · teams of 3.</strong> Your class is going to build one fingerboard skate park. Each team of three designs up to four connecting sections: ramps, rails, ledges, stairs, whatever you dream up. Every team builds to the ONE connection standard you set in Week 14. That way, all the sections snap together into one park a real fingerboard can ride.</p>
+      <p><strong>Earn the CNC license · carve one park element per team.</strong> Lasers burn and printers add plastic. A CNC router <em>cuts</em>: a spinning bit carves wood along a path you plan in Easel. This week you learn the X-Carve Pro, earn your license, and carve a wooden ledge or kicker that joins your class’s skate park in Week 20.</p>
     </div>
 
     <article class="prose wrap">
 <!--enh:listen-->
-      <div class="listen" data-src="media/ch15-listen.mp3" data-min="2"></div>
+      <div class="listen" data-src="media/ch15-listen.mp3" data-min="7"></div>
 <!--/enh:listen-->
       <!--scf-->
       <section class="mission" aria-label="Mission card">
-        <div class="mission__head"><span class="apb apb--problem">🏁 PLTW Problem</span><span class="mission__when">Weeks 16–20 · due Park Plan May 6 · Print files May 13 · Revision log May 27 · Final + reflection Jun 3</span></div>
-        <p class="mission__apb">A <strong>PLTW Problem</strong> is open-ended. Your team defines the solution within the constraints, tests it, and improves it.</p>
+        <div class="mission__head"><span class="apb apb--project">🛠️ PLTW Project</span><span class="mission__when">Week 16 · due Thu May 6, 11:59 pm</span></div>
+        <p class="mission__apb">A <strong>PLTW Project</strong> asks you to use skills you already have to make something real, with clear requirements and limits.</p>
         <div class="mission__grid">
-          <div class="mission__box mission__box--goal"><h3>🎯 Your goal</h3><ul><li>We can solve an open design problem as a team: one connected, rideable park.</li><li>I can design my sections to a shared standard and make them print.</li><li>I can test, revise with named versions, and present my work.</li></ul></div>
-          <div class="mission__box"><h3>🧰 You’ll need</h3><ul><li>Your team, team agreement, and Team##_SkatePark document</li><li>Class connector and clearance</li><li>Calipers, notebook, and decision matrix</li><li>Fingerboards for ride-testing</li><li>Pre-flight checker on this page</li></ul></div>
-          <div class="mission__box"><h3>⏳ Time and limits</h3><ul><li><strong>13 class meetings over 5 weeks (May 3 – Jun 3). No class Mon May 31 (Memorial Day).</strong></li><li>Up to 4 sections per team. Each section is 180 mm or less on every side.</li><li>Print files are due Thu May 13. Late files may not print before school ends.</li><li>Your teacher prints everything. Reprints depend on printer time.</li><li>Every section uses the class connector and clearance.</li></ul></div>
+          <div class="mission__box mission__box--goal"><h3>🎯 Your goal</h3><ul><li>I can name the parts of the X-Carve Pro and explain how it cuts.</li><li>I can set up a carve in Easel: material, bit, depth, tabs, and zero.</li><li>I can carve safely, and I’ve started my CNC license.</li></ul></div>
+          <div class="mission__box"><h3>🧰 You’ll need</h3><ul><li>The <a href="https://spartandesign.github.io/model-and-make/lab-xcarve.html">X-Carve page</a> in the Lab Guide</li><li>Calipers</li><li>Easel on your team’s lab laptop</li><li>Plywood from your teacher</li><li>Safety glasses and hearing protection</li></ul></div>
+          <div class="mission__box"><h3>⏳ Time and limits</h3><ul><li><strong>3 class meetings (Mon May 3, Tue May 4, Thu May 6)</strong></li><li>One element per team: a ledge or a kicker, 180 mm or less on every side.</li><li>One bit (the flat end mill your teacher sets up), and Easel’s carve time is 8 minutes or less.</li><li>Every through-cut has tabs.</li><li>Only students who pass the license self-check run the X-Carve, with the teacher at the machine.</li></ul></div>
         </div>
       </section>
       <h2>Step-by-step plan</h2>
       <p class="plan__intro">Follow the steps in order. The minutes are a guide. Check off each checkpoint before you move on.</p>
       <div class="plan">
-        <div class="session"><p class="session__head">Week 16 · plan and design</p><ol class="steps"><li><span class="steps__min">47 min</span><span>Mon: read the brief. Onshape 5.1: measure a real obstacle and reverse engineer it.</span></li><li><span class="steps__min">85 min</span><span>Tue: brainstorm, then a decision matrix. Choose sections and owners.</span></li><li><span class="steps__min">85 min</span><span>Thu: layout sketch and dimensions. Start modeling on your branch. Submit the Park Plan.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Park Plan submitted Thu May 6.</p></div>
-        <div class="session"><p class="session__head">Week 17 · model and check</p><ol class="steps"><li><span class="steps__min">47 min</span><span>Mon: model your sections on your branch.</span></li><li><span class="steps__min">85 min</span><span>Tue: finish the models. Merge the branches. Make the assembly drawing.</span></li><li><span class="steps__min">85 min</span><span>Thu: pre-flight check every section. Export, name, and submit print files.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Print files submitted Thu May 13.</p></div>
-        <div class="session"><p class="session__head">Weeks 18–19 · print, fit, revise</p><ol class="steps"><li><span class="steps__min">47 min</span><span>Each Monday: collect any sections that came back. Fit-test them.</span></li><li><span class="steps__min">85 min</span><span>Each Tuesday: revise what didn’t fit. Save a named version (v2, v3). Submit reprints by the end of the block.</span></li><li><span class="steps__min">85 min</span><span>Each Thursday: ride-test the sections that fit. Update the revision log.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Fit Test + Revision Log submitted Thu May 27.</p></div>
-        <div class="session"><p class="session__head">Week 20 · assemble and show</p><ol class="steps"><li><span class="steps__min">85 min</span><span>Tue: Onshape 5.4: document the project. Assemble the full park.</span></li><li><span class="steps__min">85 min</span><span>Thu: ride it. Present your section. Write or record your reflection.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Final Park + Showcase and Reflection submitted Thu Jun 3.</p></div>
+        <div class="session"><p class="session__head">Monday · 47 min</p><ol class="steps"><li><span class="steps__min">8 min</span><span>Watch the video. Read the X-Carve page in the Lab Guide.</span></li><li><span class="steps__min">12 min</span><span>Name the parts: explore, then Quiz me.</span></li><li><span class="steps__min">10 min</span><span>Try the zero, depth, and tabs tool.</span></li><li><span class="steps__min">12 min</span><span>Take the license self-check until you get 100%. Screenshot it.</span></li><li><span class="steps__min">5 min</span><span>With your team, pick a ledge or a kicker.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> License self-check at 100%. Your team chose an element.</p></div>
+        <div class="session"><p class="session__head">Tuesday block · 85 min</p><ol class="steps"><li><span class="steps__min">10 min</span><span>Teacher demo: clamp, home, Z-probe, X/Y zero, carve.</span></li><li><span class="steps__min">10 min</span><span>Caliper the plywood in three spots. Average it.</span></li><li><span class="steps__min">35 min</span><span>Design the element in Easel: material, bit, shapes, depths, tabs, and your team number.</span></li><li><span class="steps__min">10 min</span><span>Preview: 8 minutes or less? Clamps clear? Get your teacher’s OK.</span></li><li><span class="steps__min">20 min</span><span>Carve rotation starts. Waiting teams sand and plan the glue-up.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Your Easel design is approved.</p></div>
+        <div class="session"><p class="session__head">Thursday block · 85 min</p><ol class="steps"><li><span class="steps__min">55 min</span><span>Carve rotation: about 12 minutes per team at the machine. Each teammate does part of the license sign-off.</span></li><li><span class="steps__min">15 min</span><span>Snip the tabs, sand, and glue up the element.</span></li><li><span class="steps__min">10 min</span><span>Photograph it. Add the slide to your notebook.</span></li><li><span class="steps__min">5 min</span><span>Submit.</span></li></ol><p class="checkpoint"><span aria-hidden="true">✔</span> <strong>Checkpoint:</strong> Element carved. Photo and Easel screenshot submitted.</p></div>
       </div>
       <h2>Laptop or iPad?</h2>
-      <div class="tablewrap"><table class="dtable devtable"><thead><tr><th>Task</th><th>💻 Laptop</th><th>📱 iPad</th></tr></thead><tbody><tr><th scope="row">Team roles</th><td>Best for the assembly, merge, and drawing jobs.</td><td>Good for modeling a single section, photos, and the ride-test video.</td></tr><tr><th scope="row">Print-file naming</th><td>Rename in Downloads before uploading: Team07_Ramp.3mf.</td><td>In Files, long-press → Rename → Team07_Ramp.3mf, then upload.</td></tr><tr><th scope="row">Showcase evidence</th><td>Assembly drawing PDF and Onshape 5.4 documentation.</td><td>Photos and a 30-second ride video. Add them to Canvas from Photos.</td></tr><tr><th scope="row">Reflection</th><td>Type it in Canvas, or use the webcam to record.</td><td>Canvas app → Record Audio or Video, 1–2 minutes.</td></tr></tbody></table></div>
+      <div class="tablewrap"><table class="dtable devtable"><thead><tr><th>Task</th><th>💻 Laptop</th><th>📱 iPad</th></tr></thead><tbody><tr><th scope="row">Easel</th><td>Design and carve from the team laptop in Chrome. It connects to the X-Carve by USB.</td><td>Use the iPad for the Lab Guide, the self-check, and photos. Design in Easel on the team laptop.</td></tr><tr><th scope="row">Name the parts</th><td>Click the numbers on the diagram.</td><td>Tap the numbers. Turn the iPad sideways to see the whole machine.</td></tr><tr><th scope="row">Turn it in</th><td>Upload a photo and a screenshot of Easel’s preview.</td><td>Take the photo with the iPad and upload it from Photos.</td></tr></tbody></table></div>
       <p class="plan__more">More device help: <a href="devices.html">Laptop or iPad? The full guide</a>.</p>
 <!--/scf-->
       
 
+<h2>Watch first: how a CNC router works</h2>
+<figure class="video"><video controls preload="metadata" playsinline poster="media/lg-cnc-poster.jpg" aria-label="Narrated animation: how a CNC router works, with captions on screen"><source src="media/lg-cnc.mp4" type="video/mp4">Your browser can't play this video. <a href="media/lg-cnc.mp4">Download it here</a>.</video>
+<figcaption>A short animation made for this course. Captions are built in. Then watch Inventables’ own <a class="ext" href="https://www.youtube.com/watch?v=4OHcloeRdp0" target="_blank" rel="noopener">First Carve on your X-Carve Pro</a> (16:43).</figcaption></figure>
+<div class="card card--learn"><p class="card__title"><span class="ic">🪚</span> Start with the Lab Guide</p><p>Everything about the machine is on the <a href="lab-xcarve.html">X-Carve Pro page</a>: the parts diagram, how it’s set up, Easel step by step, common problems, and the license sign-off. This chapter is about using it for your team’s park element.</p></div>
 
-<!--enh:video-->
-      <h2>Watch first: the capstone in 90 seconds</h2>
-      <figure class="video">
-        <video controls preload="metadata" playsinline poster="media/ch15-capstone-walkthrough-poster.jpg" aria-label="Narrated walkthrough: the class connection standard, the five-week plan, the pre-flight check, and the showcase. Captions are on screen.">
-          <source src="media/ch15-capstone-walkthrough.mp4" type="video/mp4">
-          Your browser can't play this video. <a href="media/ch15-capstone-walkthrough.mp4">Download it here</a>.
-        </video>
-        <figcaption>Narrated walkthrough (1:15). Captions are built into the video.</figcaption>
-      </figure>
-      <details class="transcript"><summary>Read the transcript</summary><p>Your class is going to build one fingerboard skate park. Each team of three designs up to four sections. Ramps, ledges, rails, stairs: whatever you dream up. Every section uses the same class connector and clearance, so they all snap together. Each section must fit within one hundred eighty millimeters, at real fingerboard scale. In Week 16, you plan and design. Your park plan is due Thursday, May sixth. In Week 17, you finish your models and check them. Print files are due May thirteenth. In Weeks 18 and 19, your teacher prints, and you fit, ride-test, and revise. In Week 20, you assemble the whole park and show it off. Before you submit print files, run the pre-flight check. Fits the plate. Uses the standard. Prints flat. Nothing too thin. Millimeters. Named right. Print files are due May thirteenth, so every section can be printed before school ends. When sections come back, fit them together and save a named version in Onshape for each revision. Then ride the park. Every teammate presents their section. Twelve teams, one park.</p></details>
-<!--/enh:video-->
-<h2>Everything you’ve learned shows up here</h2><ul><li><strong>Onshape modeling (Units 2–4) </strong>— configurations, in-context modeling, and branch and merge.</li><li><strong>Design for printing (Wk 8) </strong>— flat, support-free, and fits the plate.</li><li><strong>Tolerance (Wk 5, 8, 9, 12, 14) </strong>— the clearance that makes the connection standard fit.</li><li><strong>Working drawings (Wk 11) </strong>— your section and assembly drawing.</li><li><strong>Onshape Unit 5 </strong>— the design process, versions for each revision, and documenting your project.</li></ul><h2>The five weeks</h2><table class="dtable"><tbody><tr><th>Week</th><th>Phase</th><th>What you do</th><th>Deliverable</th></tr><tr><td>Wk 16 · May 3–6</td><td>Launch + design</td><td>Read the brief. Do Onshape 5.1: measure a real fingerboard obstacle and reverse engineer it. Use a decision matrix to pick your features. Each member owns 1–2 sections. Sketch and dimension them. Start modeling on your branch.</td><td><strong>Park Plan</strong> · due Thu May 6</td></tr><tr><td>Wk 17 · May 10–13</td><td>Model + check</td><td>Finish your sections to the standard. Merge branches into the team assembly. Make the assembly drawing. Run the pre-flight checklist.</td><td><strong>Print Files + Pre-Flight</strong> · due Thu May 13</td></tr><tr><td>Wk 18–19 · May 17–27</td><td>Print, fit + revise</td><td>Your teacher prints the sections. Fit section to section. Ride-test. Do Onshape 5.3: save a named version for each revision (v1, v2, …). Queue reprints.</td><td><strong>Fit Test + Revision Log</strong> · due Thu May 27</td></tr><tr><td>Wk 20 · Jun 1–3</td><td>Assemble + show</td><td>Do Onshape 5.4: document your project. Assemble the full park, ride it, and present.</td><td><strong>Final Park + Showcase</strong> and <strong>Reflection</strong> · due Thu Jun 3</td></tr></tbody></table><div class="card card--learn"><p class="card__title"><span class="ic">📚</span> Onshape lessons</p><p><a class="ext" href="https://learn.onshape.com/learn/article/unit-5-putting-cad-to-work" target="_blank" rel="noopener">Onshape Intro to CAD — Unit 5: Putting CAD to Work</a>. Use lessons 5.1, 5.3, and 5.4 (5.2 is optional). Each lesson has a slide deck and a student guide.</p></div><div class="card card--note"><p><strong>Print files are due Thursday, May 13.</strong> That gives your teacher about two and a half weeks to print every section before school ends. Files that come in late may not get printed.</p></div><h2>Pre-flight checklist (before you submit print files)</h2><ul><li><strong>Fits the plate. </strong>Every section is 180 mm or less on every side.</li><li><strong>Uses the standard. </strong>Pegs and sockets match the class connection standard and clearance.</li><li><strong>Prints flat. </strong>The largest flat face sits on the plate. No supports needed.</li><li><strong>No tiny features. </strong>Nothing thinner than about 1 mm.</li><li><strong>Units are mm. </strong>Check the size in Onshape with the Measure tool before you export.</li><li><strong>Named right. </strong>Each file is named <code>Team##_SectionName.3mf</code>.</li></ul>
+<h2>What your team carves</h2>
+<p>One wooden obstacle for the class park, from the plywood your teacher gives you. Pick one:</p>
+<ul><li><strong>A ledge:</strong> two or three identical rectangles, cut out and glued into a solid block. Engrave your team number on top.</li>
+<li><strong>A kicker:</strong> three identical wedge-shaped profiles, glued side by side and sanded smooth on the slope.</li></ul>
+<p>It sits in the park on its own, so it doesn’t need the class connector. It does need to be real fingerboard scale: measure your deck and trucks like you did for the display stand.</p>
 
-<!--enh:interactive-->
-      <h2>Try it: pre-flight checker</h2>
-      <p>Type a section's size and file name, and check off the list. It tells you what to fix before you submit print files.</p>
-      <div class="sim preflight"></div>
-<!--/enh:interactive-->
-<h2>How your team works</h2><ul><li><strong>Each member owns 1–2 sections </strong>— a ramp, a rail, a ledge, a set of stairs — and models them on their own branch.</li><li><strong>The team owns </strong>the layout, the merged assembly, the assembly drawing, and making sure every section meets the standard.</li></ul><p>Every section must:</p><ul><li><strong>Meet the connection standard </strong>so it mates with its neighbors.</li><li><strong>Be real fingerboard scale </strong>and actually rideable.</li><li><strong>Fit the build plate </strong>— 180 mm or less. Bigger ideas split into connecting sections.</li><li><strong>Follow design for printing </strong>— flat where possible, support-free, nothing under about 1 mm.</li><li><strong>Stay within four sections </strong>per team.</li></ul><h2>How it’s graded</h2><table class="dtable"><tbody><tr><th>Piece</th><th>Who</th><th>Due</th><th>Points</th></tr><tr><td>Connection Standard — Configured Connector (Wk 14)</td><td>You</td><td>Thu Apr 22</td><td>15</td></tr><tr><td>Team Onshape Document + Branch &amp; Merge (Wk 15)</td><td>Team</td><td>Thu Apr 29</td><td>10</td></tr><tr><td>Park Plan</td><td>Team</td><td>Thu May 6</td><td>10</td></tr><tr><td>Print Files + Pre-Flight Checklist</td><td>Team</td><td>Thu May 13</td><td>15</td></tr><tr><td>Fit Test + Revision Log</td><td>Team</td><td>Thu May 27</td><td>15</td></tr><tr><td>Final Park + Showcase</td><td>Team</td><td>Thu Jun 3</td><td>25</td></tr><tr><td>Capstone Reflection</td><td>You</td><td>Thu Jun 3</td><td>10</td></tr><tr><td>Total</td><td></td><td></td><td>100</td></tr></tbody></table>
-      
-      
+<h2>Design rules</h2>
+<ul><li><strong>180 mm or less</strong> on every side, like every park section.</li>
+<li><strong>One bit:</strong> the flat end mill your teacher sets up. No bit changes.</li>
+<li><strong>8 minutes or less</strong> of carve time in Easel’s preview. That’s how all 12 teams get a turn.</li>
+<li><strong>Tabs</strong> on every through-cut. The team number is a shallow pocket, about 1 mm deep.</li>
+<li><strong>Measured thickness:</strong> caliper the plywood in three spots and enter the average. Labels lie: “1/2 in” plywood is often thinner.</li></ul>
+
+<h2>Try it: zero, depth, and tabs</h2>
+<p>Set the cut depth to the material thickness, then try zeroing on the wasteboard instead of the material. See why the Z-probe goes on <em>top</em>.</p>
+<div class="sim depthsim"></div>
+
+<h2>Name the parts</h2>
+<div class="sim partsim" data-machine="xcarve"></div>
+
+<h2>Carve it</h2><div class="tut"><div class="tut__step"><p class="tut__goal">Goal: a design Easel understands</p><h3>Set up Easel</h3><p>Choose <em>X-Carve Pro</em>. Enter your measured material size and thickness. Choose the bit your teacher set up.</p><p class="tut__check"><strong>✅ Check it:</strong> the thickness in Easel matches your caliper average.</p></div><div class="tut__step"><p class="tut__goal">Goal: your element in Easel</p><h3>Draw it</h3><p>Draw your rectangles or wedges, side by side with space between them. Set each outline to cut <em>outside the line</em>, all the way through, with tabs. Add your team number as a 1 mm pocket.</p><p class="tut__check"><strong>✅ Check it:</strong> every outline has tabs, and the parts don’t overlap.</p></div><div class="tut__step"><p class="tut__goal">Goal: a plan that fits the rules</p><h3>Preview</h3><p>Check the 3D preview and the time. Too long? Make it smaller or carve fewer parts. Then show your teacher.</p><p class="tut__check"><strong>✅ Check it:</strong> the time is 8 minutes or less, and your teacher OK’d it.</p></div><div class="tut__step"><p class="tut__goal">Goal: a safe carve</p><h3>Carve with your teacher</h3><p>Glasses and hearing protection on. Clamp it, home, Z-probe, set X/Y zero, vacuum on, carve. Stay with it. Hands out until the spindle stops.</p><p class="tut__check"><strong>✅ Check it:</strong> your part is cut out, held by its tabs.</p></div><div class="tut__step"><p class="tut__goal">Goal: a finished element</p><h3>Finish it</h3><p>Snip the tabs, sand the edges, and glue the pieces. Clamp the glue-up until it dries.</p><p class="tut__check"><strong>✅ Check it:</strong> your fingerboard rides it smoothly.</p></div></div>
+<div class="card card--note"><p class="card__title"><span class="ic">⏱️</span> The carve rotation</p><p>There’s one X-Carve and 12 teams, so carving starts at the end of Tuesday and runs all Thursday. While you wait: sand, plan the glue-up, practice the license steps on the diagram, and start reading the capstone brief in <a href="chapter-16.html">Chapter 16</a>.</p></div>
+<div class="card card--safe"><p class="card__title"><span class="ic">🪪</span> Your CNC license</p><p>Pass the self-check below at 100% before you touch the machine. During your team’s carve, your teacher signs off the steps you do. Steps you don’t get to this week can be signed off later. See the <a href="lab-xcarve.html">full sign-off list</a>.</p></div>
+
 <!--enh:quiz-->
       <h2>Check your understanding</h2>
       <div class="quiz"><script type="application/json">[
  {
-  "q": "What is the biggest a capstone section can be?",
+  "q": "Where do you set Z zero for your carve?",
   "options": [
-   "100 mm",
-   "180 mm on every side",
-   "256 mm",
-   "Any size"
+   "On the wasteboard",
+   "On top of your material, with the Z-probe",
+   "Anywhere on the bed",
+   "On the clamps"
   ],
   "answer": 1,
-  "why": "180 mm fits the A1 Mini bed, so any section can print on any printer.",
-  "hint": "It's the smallest bed in the lab."
+  "why": "Easel measures every depth down from Z zero, so it has to be the top of your material.",
+  "hint": "Try the zero tool."
  },
  {
-  "q": "When are team print files due?",
+  "q": "Your plywood measures 0.48, 0.47, and 0.49 in. What thickness do you enter in Easel?",
   "options": [
-   "Thursday, May 6",
-   "Thursday, May 13",
-   "Thursday, May 27",
-   "Thursday, June 3"
+   "0.50 in, the label size",
+   "0.48 in, the average",
+   "0.47 in, the smallest",
+   "1 in"
   ],
   "answer": 1,
-  "why": "Print files are due May 13, so your teacher has about two and a half weeks to print before school ends.",
-  "hint": "Check the five-week table."
+  "why": "Measure, don’t trust the label: average your three readings.",
+  "hint": "Same as Week 1."
  },
  {
-  "q": "A section is 210 mm long. What should the team do?",
+  "q": "Why does every through-cut need tabs?",
   "options": [
-   "Shrink it in the slicer",
-   "Split it into two connecting sections",
-   "Print it on its edge",
-   "Submit it anyway"
+   "They make the cut faster",
+   "They hold the part so it can’t break free and get thrown",
+   "They’re decoration",
+   "They cool the bit"
   ],
   "answer": 1,
-  "why": "Bigger ideas split into connecting sections that use the standard.",
-  "hint": "It has to fit the plate."
+  "why": "Tabs keep the part attached until the carve is done. Snip and sand them after.",
+  "hint": "Think about the end of the cut."
  },
  {
-  "q": "Which file name follows the rule?",
+  "q": "Easel says your carve takes 14 minutes. What do you do?",
   "options": [
-   "ramp final FINAL.stl",
-   "Team07_Ramp.3mf",
-   "team 7 ramp",
-   "Ramp.3mf"
+   "Carve it anyway",
+   "Make the element smaller or simpler until it’s 8 minutes or less",
+   "Change to a bigger bit without asking",
+   "Turn up the speed"
   ],
   "answer": 1,
-  "why": "Use Team##_SectionName.3mf, so your teacher's print queue stays sorted.",
-  "hint": "Team, two digits, underscore, name."
+  "why": "The time limit keeps the rotation moving so every team carves. Simplify the design.",
+  "hint": "Check the limits."
  },
  {
-  "q": "During Weeks 18–19, what should you do each time you revise a section?",
+  "q": "When can you reach in to remove your part?",
   "options": [
-   "Start a new document",
-   "Save a named version in Onshape (v1, v2, …)",
-   "Email it to your teacher",
-   "Nothing"
+   "When the bit stops moving sideways",
+   "When the spindle has completely stopped",
+   "While it slows down",
+   "Anytime, with gloves"
   ],
   "answer": 1,
-  "why": "Named versions (Onshape 5.3) show how your design changed and let you go back.",
-  "hint": "Onshape lesson 5.3."
+  "why": "Only after the spindle has stopped. No gloves near a spinning bit.",
+  "hint": "Still and silent."
  }
 ]</script></div>
 <!--/enh:quiz-->
-      <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Add it to your notebook slides first. Then submit on Canvas by Thursday at 11:59 pm: your notebook link and the slide numbers.</p></div>
+      <div class="card card--tip"><p class="card__title"><span class="ic">✅</span> Turn it in</p><p>Add a slide to your notebook first: a photo of your element, a screenshot of Easel’s preview (depth, tabs, and time), and your plywood measurements. Then submit on Canvas by Thursday at 11:59 pm: the photo, the screenshot, and your notebook link with the slide number.</p></div>
+      <p class="sources"><strong>Sources:</strong> Inventables X-Carve Pro specifications, Beginner’s Guide, and First Carve video (inventables.com, easel.com).</p>
     </article>
 
     <nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
@@ -161,5 +168,6 @@
 
 <script src="nav.js"></script>
 <script src="learn.js"></script>
+<script src="labguide.js"></script>
 </body>
 </html>

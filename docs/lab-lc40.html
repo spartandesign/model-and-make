@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dremel LC40 Laser Cutter — Model &amp; Make</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-chapter="LC">
+
+<header class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__mark">D&amp;M Advanced · Onshape</span>
+    <span class="topbar__title">Model &amp; Make</span>
+    <span class="topbar__school">Mary R. Stauffer MS · Downey USD</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle contents">Contents</button>
+  </div>
+</header>
+
+<div class="book">
+  <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
+  <main class="main">
+<div class="chead"><div class="chead__in"><div class="chead__num">LC</div><div><p class="chead__eyebrow">Lab Guide</p><h1 class="chead__title">Dremel LC40 Laser Cutter</h1></div></div></div>
+<div class="lede"><p>The LC40 uses an invisible infrared beam, focused to a tiny spot, to burn a path through wood, acrylic, and card. Mirrors guide the beam, the lens focuses it, air blows the smoke away, and a fan sends it outside.</p></div>
+<article class="prose wrap">
+<div class="listen" data-src="media/lg-lc40.mp3" data-min="7"></div>
+<figure class="video"><video controls preload="metadata" playsinline poster="media/lg-laser-poster.jpg" aria-label="Narrated animation: How a laser cutter works, with captions on screen"><source src="media/lg-laser.mp4" type="video/mp4">Your browser can't play this video. <a href="media/lg-laser.mp4">Download it here</a>.</video><figcaption>How a laser cutter works. A short animation made for this course. Captions are built in.</figcaption></figure><h2>Watch first</h2><div class="card card--learn"><p class="card__title"><span class="ic">▶️</span> Dremel: Getting Started with your LC40</p><p>Dremel’s official getting-started page, with setup videos and the manual. The LC40 touchscreen also has built-in tutorials: tap the help icon.</p><p><a class="cta ext" href="https://www.dremel.com/us/en/digilab/support/lc40-laser-cutter/getting-started-with-your-lc40" target="_blank" rel="noopener">Open the video</a></p></div>
+<h2>Specs that matter</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th></th><th>Dremel LC40</th></tr></thead><tbody><tr><td>Laser</td><td>40 W sealed CO₂ tube, infrared (10.6 μm), invisible</td></tr><tr><td>Cooling</td><td>Water, pumped from the Hex Box</td></tr><tr><td>Air assist</td><td>From the Hex Box, through the nozzle on the head</td></tr><tr><td>Aiming</td><td>Red dot pointer and a wide-angle camera</td></tr><tr><td>Safety</td><td>Lid sensor: it won’t fire with the lid open. Class 3R.</td></tr><tr><td>Files</td><td>SVG or PDF for cuts and vector engraving; JPG or PNG for photos</td></tr></tbody></table></div>
+
+<h2>Name the parts</h2>
+<div class="sim partsim" data-machine="lc40"></div>
+
+<h2>How it works</h2>
+<ol><li>Electricity excites the CO₂ gas in the <strong>tube</strong>, which gives off a strong infrared beam.</li>
+<li>Three <strong>mirrors</strong> bounce the beam across the machine to the <strong>laser head</strong>.</li>
+<li>The <strong>lens</strong> focuses it to a tiny, very hot spot. The material at that spot burns or melts away.</li>
+<li>The head moves on the <strong>gantry</strong> to trace your design. <strong>Cut</strong> lines go all the way through. <strong>Engrave</strong> areas only burn the surface.</li>
+<li>The beam burns a thin slot called <strong>kerf</strong>. That’s why your rack slots in Chapter 11 needed a kerf test.</li></ol>
+<p><strong>Focus matters most.</strong> The spot is sharp only at one height above the material. Set it with the <strong>focus puck</strong> (spacer) under the head. Out of focus means wide, weak, charred cuts.</p>
+
+<h2>How it’s set up in our lab</h2>
+<ul><li>The <strong>Hex Box</strong> holds the cooling water (distilled only) and supplies air assist. The laser won’t run if the water isn’t flowing.</li>
+<li>The <strong>exhaust hose</strong> vents outside. The vent fan runs during every job and for 10 minutes after.</li>
+<li>The LC40 is on the school network. Open the control software in a browser by typing the <strong>IP address shown on the LC40’s screen</strong>.</li>
+<li>A CO₂ fire extinguisher hangs nearby. Nothing flammable is stored on or next to the laser.</li></ul>
+
+<h2 id="materials">Materials: yes and no</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>✅ Approved</th><th>⛔ Never in the laser</th></tr></thead><tbody><tr><td>Acrylic (cast or extruded, any color)</td><td>PVC or vinyl: gives off chlorine gas that harms you and destroys the machine</td></tr><tr><td>Plywood (laser-safe, formaldehyde-compliant)</td><td>ABS, polycarbonate, nylon, HDPE, POM (Delrin): melt, catch fire, or give off toxic fumes</td></tr><tr><td>Solid wood, cardboard, paper</td><td>PTFE (Teflon), fiberglass, foam, and regular rubber</td></tr><tr><td>Leather (real, untreated)</td><td>Particleboard and anything coated or painted</td></tr><tr><td>Laser-grade rubber (for stamps)</td><td><strong>Anything you can’t identify.</strong> Ask first.</td></tr></tbody></table></div>
+
+<h2>Before every job</h2>
+<div class="tut"><div class="tut__step"><p class="tut__goal">Goal: a safe machine</p><h3>Check the machine</h3><p>Exhaust on, Hex Box running, no red status icons on the screen, honeycomb bed clean, extinguisher in place.</p><p class="tut__check"><strong>✅ Check it:</strong> the water, fan, air, and lid icons are all good.</p></div><div class="tut__step"><p class="tut__goal">Goal: an approved material</p><h3>Check the material</h3><p>Only from the approved list. It lies flat on the honeycomb. Warped wood can be weighted down at the edges, away from the cut.</p><p class="tut__check"><strong>✅ Check it:</strong> you can name the material, and it’s on the approved list.</p></div><div class="tut__step"><p class="tut__goal">Goal: a focused beam</p><h3>Focus</h3><p>Move the head over the material. Put the focus puck under the head, lower it until it just touches, then lock it and remove the puck.</p><p class="tut__check"><strong>✅ Check it:</strong> the puck slides out snugly, without pushing the material.</p></div></div>
+
+<h2>The LC40 software: from file to cut</h2>
+<div class="tut"><div class="tut__step"><p class="tut__goal">Goal: the software open</p><h3>Connect</h3><p>Type the IP address from the LC40’s screen into the browser’s address bar.</p><p class="tut__check"><strong>✅ Check it:</strong> you see the LC40 control page with the camera view.</p></div><div class="tut__step"><p class="tut__goal">Goal: your design on the bed</p><h3>Import and place</h3><p>Upload your file. Use SVG or PDF for cut lines (from TinkerCAD or an Onshape drawing exported 1:1 as PDF). Drag it onto your material in the camera view.</p><p class="tut__check"><strong>✅ Check it:</strong> the design sits on your material, inside the edges.</p></div><div class="tut__step"><p class="tut__goal">Goal: the right power</p><h3>Choose settings</h3><p>Pick your material from the materials library, or ask your teacher for heat, speed, and passes. Set cut lines to cut and filled areas to engrave.</p><p class="tut__check"><strong>✅ Check it:</strong> the material and thickness match what’s on the bed.</p></div><div class="tut__step"><p class="tut__goal">Goal: a path that fits</p><h3>Run perimeter</h3><p>Click <em>Run Perimeter</em>. The red dot traces the outline of your job.</p><p class="tut__check"><strong>✅ Check it:</strong> the red dot stays on the material the whole way around.</p></div><div class="tut__step"><p class="tut__goal">Goal: a running job</p><h3>Start</h3><p>Click <em>Start</em>, close the lid, then press the physical <strong>Start button twice</strong> quickly. Stay and watch through the window.</p><p class="tut__check"><strong>✅ Check it:</strong> the job runs, and small flickers go out right away.</p></div><div class="tut__step"><p class="tut__goal">Goal: clean parts, clean air</p><h3>Finish</h3><p>When it’s done, wait 30 seconds before lifting the lid so the smoke clears. Leave the fan running 10 minutes. Remove parts and scraps.</p><p class="tut__check"><strong>✅ Check it:</strong> the bed is clear for the next person.</p></div></div>
+
+<h2>Common problems</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>What you see</th><th>Likely cause</th><th>What to do</th><th>Who fixes it</th></tr></thead><tbody><tr><td>Didn’t cut all the way through</td><td>Out of focus; wrong settings; dirty lens; warped material</td><td>Refocus with the puck. Check the material setting. Add a pass. If it keeps happening, tell your teacher (lens or mirrors).</td><td><strong>You</strong></td></tr><tr><td>Edges very burnt or brown</td><td>Too much power or too slow; air assist weak</td><td>Use the library setting. Tell your teacher if air assist isn’t blowing.</td><td><strong>You</strong></td></tr><tr><td>Red icon: water</td><td>Low water or the pump isn’t running</td><td>Stop. Tell your teacher. Refill with distilled water only.</td><td><strong>Teacher</strong></td></tr><tr><td>Red icon: fan or air</td><td>Exhaust or air pump off or blocked</td><td>Stop. Tell your teacher.</td><td><strong>Teacher</strong></td></tr><tr><td>Red icon: lid</td><td>Lid not fully closed</td><td>Close the lid firmly.</td><td><strong>You</strong></td></tr><tr><td>Software won’t load or freezes</td><td>Lost the network connection</td><td>Refresh the browser. Check the IP address on the LC40’s screen.</td><td><strong>You</strong></td></tr><tr><td>Cuts weak in one corner only</td><td>Mirrors out of line</td><td>Tell your teacher. Mirror alignment is a teacher job.</td><td><strong>Teacher</strong></td></tr><tr><td>A flame that doesn’t go out right away</td><td>Material catching fire</td><td>Lid stays closed. Press Stop. Tell your teacher right away.</td><td><strong>Teacher</strong></td></tr></tbody></table></div>
+
+<h2>Safety</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>It looks or sounds scary…</th><th>What’s really going on</th></tr></thead><tbody><tr><td>Small flickers of flame at the cut</td><td>Normal for wood and card, as long as they go out as the head moves on. A flame that grows or stays is not normal.</td></tr><tr><td>A bright spot and smoke</td><td>That’s the cut. The window blocks the infrared beam, so watching through it is safe.</td></tr><tr><td>Humming and bubbling sounds</td><td>The water pump and air pump in the Hex Box.</td></tr><tr><td>“Can the laser shoot me?”</td><td>Not with the lid closed. The lid sensor stops the laser if it opens. That’s why you never defeat the lid sensor.</td></tr></tbody></table></div>
+<div class="card card--safe"><p class="card__title"><span class="ic">⚠️</span> What can actually hurt you</p><ul><li><strong>Fire.</strong> Never leave a job running, not even for a minute.</li><li><strong>Fumes</strong> from banned materials. Approved list only, exhaust always on.</li><li><strong>Hot parts</strong> right after a cut, and sharp acrylic edges.</li><li>The tube and power supply use high voltage. Only your teacher opens panels.</li></ul></div>
+
+<div class="card card--learn"><p class="card__title"><span class="ic">🪪</span> Laser license</p><p>One license covers both lasers. The practical sign-off checklist is at the bottom of the <a href="lab-ador.html">Ador page</a>.</p></div>
+<div class="card card--tip"><p class="card__title"><span class="ic">📺</span> More videos</p><p><strong>From Dremel</strong> (official):</p><ul><li><a class="ext" href="https://www.dremel.com/us/en/digilab/support/lc40-laser-cutter/getting-started-with-your-lc40" target="_blank" rel="noopener">Getting Started with your LC40 (setup videos and manual)</a></li><li><a class="ext" href="https://www.dremel.com/us/en/digilab/support/lc40-laser-cutter" target="_blank" rel="noopener">LC40 support: FAQs and troubleshooting</a></li></ul><p><strong>From teachers and makers</strong> (not the maker). Useful, but if a video and this guide disagree, follow this guide and ask your teacher. Older videos may show different screens.</p><ul><li><a class="ext" href="https://www.youtube.com/watch?v=hoXlQe9RH74" target="_blank" rel="noopener">Dremel LC40 software tutorial</a> · University of Georgia · older software</li><li><a class="ext" href="https://www.youtube.com/watch?v=mVHqcu7ssDU" target="_blank" rel="noopener">Laser cutter cleaning</a> · Kathryn Marinaro · teacher task</li></ul></div>
+
+<h2>Check your understanding</h2>
+<div class="quiz"><script type="application/json">[{"q": "What does the focus puck do?", "options": ["Sets the right height between the lens and the material", "Holds the material down", "Cools the tube", "Turns on the fan"], "answer": 0, "why": "The beam is sharp only at one height. The puck sets it.", "hint": "Height."}, {"q": "Which material is banned because it gives off chlorine gas?", "options": ["Acrylic", "Plywood", "PVC or vinyl", "Cardboard"], "answer": 2, "why": "PVC and vinyl release chlorine. Never laser them.", "hint": "Starts with V."}, {"q": "How do you start a job after clicking Start in the software?", "options": ["Open the lid", "Close the lid, then press the Start button twice", "Wait 5 minutes", "Hold the red dot button"], "answer": 1, "why": "Lid closed, then the physical Start button twice.", "hint": "Two presses."}, {"q": "A flame keeps burning on your part. What do you do?", "options": ["Open the lid and blow it out", "Keep the lid closed, press Stop, and tell your teacher", "Walk away", "Pour water in"], "answer": 1, "why": "Opening the lid feeds the fire air. Keep it closed and get your teacher.", "hint": "Lid stays closed."}, {"q": "How long does the exhaust run after a job?", "options": ["Not at all", "10 minutes", "1 hour", "Until tomorrow"], "answer": 1, "why": "Let the fan clear the smoke for 10 minutes.", "hint": "Ten."}]</script></div>
+<p class="sources"><strong>Sources:</strong> Dremel LC40 Digilab manual and support pages (dremel.com): specifications, materials, operation, troubleshooting.</p>
+</article>
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+  </main>
+</div>
+
+<script src="nav.js"></script>
+<script src="learn.js"></script>
+<script src="labguide.js"></script>
+</body>
+</html>

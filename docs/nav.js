@@ -8,9 +8,16 @@
 const BOOK = [
   { unit: "Getting Started", chapters: [
     { n: "GS", title: "Start Here", file: "start-here.html" },
-    { n: "LAB", title: "The Lab & Safety", file: "lab.html" },
     { n: "DEV", title: "Laptop or iPad?", file: "devices.html" },
     { n: "NB", title: "Your engineering notebook", file: "notebook.html" },
+  ]},
+  { unit: "Lab Guide", chapters: [
+    { n: "LAB", title: "Lab home & licenses", file: "lab.html" },
+    { n: "LP", title: "3D printers", file: "lab-printers.html" },
+    { n: "LF", title: "Filament", file: "lab-filament.html" },
+    { n: "LC", title: "LC40 laser", file: "lab-lc40.html" },
+    { n: "LA", title: "Ador laser", file: "lab-ador.html" },
+    { n: "LX", title: "X-Carve Pro CNC", file: "lab-xcarve.html" },
   ]},
   { unit: "Unit 1 · Foundations: Measure & Sketch", chapters: [
     { n: 1, title: "Measurement & Calipers", file: "chapter-01.html" },
@@ -35,7 +42,8 @@ const BOOK = [
   { unit: "Unit 5 · Capstone: Skate Park", chapters: [
     { n: 13, title: "Onshape Power Tools: Configurations", file: "chapter-13.html" },
     { n: 14, title: "Teamwork in Onshape", file: "chapter-14.html" },
-    { n: 15, title: "Capstone Skate Park", file: "chapter-15.html" },
+    { n: 15, title: "CNC Router: Carve a Park Element", file: "chapter-15.html" },
+    { n: 16, title: "Capstone Skate Park", file: "chapter-16.html" },
   ]},
   { unit: "Extension · CAD for Robotics", chapters: [
     { n: "E1", title: "Robot bracket", file: "extension-1.html" },

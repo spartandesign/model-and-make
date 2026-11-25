@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filament: PLA, PETG &amp; TPU — Model &amp; Make</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-chapter="LF">
+
+<header class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__mark">D&amp;M Advanced · Onshape</span>
+    <span class="topbar__title">Model &amp; Make</span>
+    <span class="topbar__school">Mary R. Stauffer MS · Downey USD</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle contents">Contents</button>
+  </div>
+</header>
+
+<div class="book">
+  <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
+  <main class="main">
+<div class="chead"><div class="chead__in"><div class="chead__num">LF</div><div><p class="chead__eyebrow">Lab Guide</p><h1 class="chead__title">Filament: PLA, PETG &amp; TPU</h1></div></div></div>
+<div class="lede"><p>Filament is the plastic string the printer melts. We use three kinds. PLA is easy and stiff, PETG is tougher, and TPU is rubbery. Pick the one your part needs, and keep it dry.</p></div>
+<article class="prose wrap">
+<div class="listen" data-src="media/lg-filament.mp3" data-min="4"></div>
+
+<h2>Try it: which filament?</h2>
+<div class="sim filsim"></div>
+
+<h2>The three filaments</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th></th><th>PLA</th><th>PETG</th><th>TPU</th></tr></thead><tbody><tr><td>Feels like</td><td>Hard and stiff</td><td>Tough, a little bendy</td><td>Rubber</td></tr><tr><td>Good for</td><td>Most class parts, models, display pieces</td><td>Parts that get hit, bent, or warm</td><td>Bumpers, grips, wheels, bushings</td></tr><tr><td>Nozzle</td><td>190–240 °C</td><td>240–270 °C</td><td>200–250 °C</td></tr><tr><td>Bed (Textured PEI)</td><td>45–65 °C</td><td>60–80 °C</td><td>35–45 °C</td></tr><tr><td>Through the AMS?</td><td>Yes</td><td>Yes</td><td><strong>No</strong>. Too soft: use the spool holder.</td></tr><tr><td>Watch out for</td><td>Softens near 50 °C (a hot car)</td><td>Strings if it’s wet</td><td>Prints slowly; must be dry</td></tr><tr><td>Door (P2S)</td><td>Open the door if the bed is above 45 °C</td><td>Open the door if the bed is above 70 °C</td><td>Closed is fine</td></tr></tbody></table></div>
+<p>You don’t type these numbers in. Bambu Studio’s filament profiles (like <em>Bambu PLA Basic</em> or <em>Generic PETG</em>) set them for you. Knowing them helps you spot a wrong setting.</p>
+
+<h2>Read the spool</h2>
+<p>Every spool label tells you the <strong>type</strong> (PLA, PETG, TPU), the <strong>diameter</strong> (ours are all 1.75 mm), the <strong>weight</strong> (usually 1 kg), and a temperature range. Bambu spools have a chip the AMS reads, so it knows the type and color automatically. Other brands need you to set the type on the screen.</p>
+
+<h2>Load and unload</h2>
+<div class="tut"><div class="tut__step"><p class="tut__goal">Goal: filament ready to feed</p><h3>Cut a clean end</h3><p>Snip the end at an angle with flush cutters so it slides in easily. Never let go of the loose end: it springs back and tangles.</p><p class="tut__check"><strong>✅ Check it:</strong> a sharp, straight, clean end.</p></div><div class="tut__step"><p class="tut__goal">Goal: PLA or PETG in the AMS</p><h3>Load the AMS</h3><p>Put the spool in an AMS slot and push the end into the feeder until it grabs. The AMS pulls it in. On the screen, check the slot shows the right type and color.</p><p class="tut__check"><strong>✅ Check it:</strong> the slot’s color and type match the spool.</p></div><div class="tut__step"><p class="tut__goal">Goal: TPU on the spool holder</p><h3>Load an external spool</h3><p>Hang the spool on the holder on the back. Feed the end into the tube by hand, then use <em>Load</em> on the screen. TPU never goes in the AMS.</p><p class="tut__check"><strong>✅ Check it:</strong> filament comes out of the nozzle when it loads.</p></div><div class="tut__step"><p class="tut__goal">Goal: a tidy spool</p><h3>Unload and store</h3><p>Use <em>Unload</em> on the screen. Push the end through a hole on the edge of the spool so it can’t unwind. Bag it with desiccant.</p><p class="tut__check"><strong>✅ Check it:</strong> the end is clipped, and the spool is back in its bin.</p></div></div>
+
+<h2>Keep it dry</h2>
+<p>All filament soaks up water from the air, a little every day. Wet filament pops, strings, and prints weak, brittle parts. TPU and PETG are the most picky.</p>
+<ul><li>Store spools in sealed bins or bags with desiccant packs.</li><li>If filament snaps when you bend it, or the print is stringy and bubbly, it’s probably wet. Tell your teacher. It can be dried in a filament dryer.</li></ul>
+
+<h2>Common problems</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>What you see</th><th>Likely cause</th><th>What to do</th><th>Who fixes it</th></tr></thead><tbody><tr><td>Filament snaps easily</td><td>Old or wet PLA</td><td>Swap the spool. Tell your teacher to dry it.</td><td><strong>Teacher</strong></td></tr><tr><td>Lots of thin strings</td><td>Wet filament (often PETG)</td><td>Dry it, and use the matching Bambu profile.</td><td><strong>Teacher</strong></td></tr><tr><td>Spool won’t turn; tangle warning</td><td>A loose end crossed under other loops</td><td>Pause, unload, find the cross-over, and rewind it. Clip the end next time.</td><td><strong>You</strong></td></tr><tr><td>Wrong color or type printing</td><td>The slot or profile doesn’t match the spool</td><td>Check the AMS slot and the filament in Bambu Studio before you print.</td><td><strong>You</strong></td></tr><tr><td>TPU jammed</td><td>It was loaded into the AMS</td><td>Stop. Get your teacher to clear it.</td><td><strong>Teacher</strong></td></tr></tbody></table></div>
+
+<div class="card card--safe"><p class="card__title"><span class="ic">⚠️</span> Safety</p><ul><li>Use flush cutters, cutting away from you.</li><li>The nozzle is still hot while filament loads. Keep fingers away.</li><li>Desiccant packs are not food. Keep them in the bins.</li></ul></div>
+
+<div class="card card--tip"><p class="card__title"><span class="ic">📺</span> More videos</p><p><strong>From Bambu Lab</strong> (official):</p><ul><li><a class="ext" href="https://wiki.bambulab.com/en/filament-acc/filament/filament-guide-material-table" target="_blank" rel="noopener">Bambu Lab filament guide (temperatures and tips for every type)</a></li><li><a class="ext" href="https://www.youtube.com/playlist?list=PLFUVS59deIm3-w5lTJZTJGBNwVCihL8i-" target="_blank" rel="noopener">P2S User Guide playlist (includes loading filament)</a></li></ul></div>
+
+<h2>Check your understanding</h2>
+<div class="quiz"><script type="application/json">[{"q": "You need a bumper that squishes. Which filament?", "options": ["PLA", "PETG", "TPU", "Any"], "answer": 2, "why": "TPU is rubbery and flexible.", "hint": "Rubbery."}, {"q": "Why can’t TPU go through the AMS?", "options": ["It’s too soft and jams", "It’s too hot", "It’s the wrong color", "It’s too heavy"], "answer": 0, "why": "Soft filament buckles in the long feed path. Use the spool holder.", "hint": "Think about pushing a noodle."}, {"q": "Your PLA keeps snapping. What’s the likely cause?", "options": ["It’s too dry", "It’s old or has soaked up water", "The bed is too cold", "The nozzle is too big"], "answer": 1, "why": "Filament absorbs moisture and gets brittle.", "hint": "It soaks up the air."}, {"q": "A part goes in a hot car. Which is better than PLA?", "options": ["PETG", "Wet PLA", "More infill", "A smaller nozzle"], "answer": 0, "why": "PLA softens near 50 °C. PETG handles heat better.", "hint": "Tougher, more heat-resistant."}]</script></div>
+<p class="sources"><strong>Sources:</strong> Bambu Lab Wiki filament guide (material table, AMS compatibility, drying, plate notes).</p>
+</article>
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+  </main>
+</div>
+
+<script src="nav.js"></script>
+<script src="learn.js"></script>
+<script src="labguide.js"></script>
+</body>
+</html>

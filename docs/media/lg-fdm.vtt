@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:07.079
+A 3D printer is like a hot glue gun on a robot. Here's how it turns your model into a real part.
+
+00:00:08.467 --> 00:00:15.025
+First, Bambu Studio slices your model into hundreds of thin layers, about point two millimeters each.
+
+00:00:15.025 --> 00:00:18.447
+For every layer, it plans the path the nozzle will draw.
+
+00:00:19.733 --> 00:00:23.944
+In the toolhead, the extruder's gears push the filament into the hot end.
+
+00:00:23.944 --> 00:00:29.009
+A heater melts it, and it squeezes out of a nozzle only point four millimeters wide.
+
+00:00:29.009 --> 00:00:32.260
+A fan cools each line so it hardens right away.
+
+00:00:33.567 --> 00:00:39.720
+The nozzle draws one layer. Then the bed drops a tiny bit, and it draws the next layer on top.
+
+00:00:39.720 --> 00:00:42.950
+Layer by layer, your part grows from the bottom up.
+
+00:00:44.433 --> 00:00:46.447
+A printer can't print in mid-air.
+
+00:00:46.447 --> 00:00:51.704
+Slopes past about forty five degrees need supports underneath, which you snap off later.
+
+00:00:53.200 --> 00:00:57.305
+The first layer matters most. A clean, warm plate helps it stick.
+
+00:00:57.305 --> 00:01:02.305
+When the print is done, let the plate cool, lift it out, and flex it. The print pops off.
+
+00:01:03.800 --> 00:01:08.374
+The nozzle can reach three hundred degrees Celsius, and the bed gets hot too.
+
+00:01:08.374 --> 00:01:15.423
+So wait until the printer stops and cools before you reach in. Then it's just a robot that draws with plastic.

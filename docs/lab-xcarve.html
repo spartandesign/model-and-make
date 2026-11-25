@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X-Carve Pro CNC Router — Model &amp; Make</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-chapter="LX">
+
+<header class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__mark">D&amp;M Advanced · Onshape</span>
+    <span class="topbar__title">Model &amp; Make</span>
+    <span class="topbar__school">Mary R. Stauffer MS · Downey USD</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle contents">Contents</button>
+  </div>
+</header>
+
+<div class="book">
+  <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
+  <main class="main">
+<div class="chead"><div class="chead__in"><div class="chead__num">LX</div><div><p class="chead__eyebrow">Lab Guide</p><h1 class="chead__title">X-Carve Pro CNC Router</h1></div></div></div>
+<div class="lede"><p>A CNC router is a robot drill that moves sideways. A spinning bit cuts into wood or plastic while the machine moves it along a path from Easel. It’s the strongest machine in the lab, and also one of the simplest once you know its parts.</p></div>
+<article class="prose wrap">
+<div class="listen" data-src="media/lg-xcarve.mp3" data-min="7"></div>
+<figure class="video"><video controls preload="metadata" playsinline poster="media/lg-cnc-poster.jpg" aria-label="Narrated animation: How a CNC router works, with captions on screen"><source src="media/lg-cnc.mp4" type="video/mp4">Your browser can't play this video. <a href="media/lg-cnc.mp4">Download it here</a>.</video><figcaption>How a CNC router works. A short animation made for this course. Captions are built in.</figcaption></figure><h2>Watch first</h2><div class="card card--learn"><p class="card__title"><span class="ic">▶️</span> Inventables: The First Carve on your X-Carve Pro (16:43)</p><p>Inventables’ own video, step by step from clamping to carving. Watch it before your first CNC class.</p><p><a class="cta ext" href="https://www.youtube.com/watch?v=4OHcloeRdp0" target="_blank" rel="noopener">Open the video</a></p></div>
+<h2>Specs that matter</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th></th><th>X-Carve Pro</th></tr></thead><tbody><tr><td>Spindle</td><td>1.5 kW (2 hp), air-cooled, 8,000–24,000 RPM</td></tr><tr><td>Bits</td><td>ER16 collet: 1/8 in and 1/4 in shanks</td></tr><tr><td>Motion</td><td>Ball screws and linear guides; Z travel 6.5 in</td></tr><tr><td>Workholding</td><td>T-slot wasteboard with clamps</td></tr><tr><td>Dust</td><td>Dust shoe and hose to a shop vacuum</td></tr><tr><td>Controls</td><td>Control box with Pause, Resume, Reset, E-stop, and a Z-probe jack</td></tr><tr><td>Software</td><td>Easel (in a browser), connected by USB</td></tr></tbody></table></div>
+
+<h2>Name the parts</h2>
+<div class="sim partsim" data-machine="xcarve"></div>
+
+<h2>How it works</h2>
+<ol><li><strong>Design</strong> in Easel (or import an SVG from Onshape or TinkerCAD). Tell Easel your material, its size and thickness, and your bit.</li>
+<li>Easel makes a <strong>toolpath</strong>: the route the bit follows, and how deep it goes on each pass.</li>
+<li>The machine <strong>homes</strong> (finds its corners), then you set <strong>zero</strong>: where the corner and the top of your material are.</li>
+<li>The <strong>spindle</strong> spins the bit, and the motors move it in X, Y, and Z. The bit cuts a little deeper each pass until it reaches the depth you set.</li></ol>
+<p>Lasers burn, but a CNC <strong>cuts</strong>, so it can carve thick wood, pockets, and 3D shapes. Unlike the lasers, it can also cut some plastics that are banned in the laser, like HDPE, because nothing burns.</p>
+
+<h2>Bits</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>Bit</th><th>Looks like</th><th>Use it for</th></tr></thead><tbody><tr><td>Flat end mill (upcut)</td><td>Flat tip, spiral flutes</td><td>Cutting parts out and pockets. Pulls chips up and out; the top edge can fuzz.</td></tr><tr><td>Downcut end mill</td><td>Flutes spiral the other way</td><td>Clean top edges on plywood. Pushes chips down.</td></tr><tr><td>V-bit</td><td>Pointed cone</td><td>Lettering, signs, and chamfers.</td></tr><tr><td>Ball nose</td><td>Rounded tip</td><td>3D curved surfaces.</td></tr></tbody></table></div>
+<p>Easel’s bit library sets a safe <strong>feed rate</strong> (how fast it moves) and <strong>depth per pass</strong> for each bit and material. Don’t change them without your teacher.</p>
+
+<h2>Try it: zero, depth, and tabs</h2>
+<p>The two most important numbers in CNC are <strong>where zero is</strong> and <strong>how deep you cut</strong>. Try different settings and watch what the bit does.</p>
+<div class="sim depthsim"></div>
+
+<h2>How it’s set up in our lab</h2>
+<ul><li>The X-Carve Pro plugs into its own regular outlet, <strong>not a GFCI outlet</strong> (Inventables says it isn’t compatible with them).</li>
+<li>A lab laptop running Easel connects to the controller by USB.</li>
+<li>The shop vacuum connects to the dust shoe hose. It runs during every carve.</li>
+<li>Safety glasses and hearing protection hang next to the machine. The E-stop on the control box is always reachable.</li></ul>
+
+<h2>Easel: your first carve</h2>
+<div class="tut"><div class="tut__step"><p class="tut__goal">Goal: a design Easel understands</p><h3>Set up the job</h3><p>In Easel, choose <em>X-Carve Pro</em>. Enter the material and its real size and thickness (measure with calipers). Choose your bit.</p><p class="tut__check"><strong>✅ Check it:</strong> the material thickness in Easel matches your caliper reading.</p></div><div class="tut__step"><p class="tut__goal">Goal: a design that fits</p><h3>Design and set depth</h3><p>Import your SVG or draw shapes. For each shape, choose the cut path (outside, inside, on the line, or fill) and the depth. Add <strong>tabs</strong> to parts that cut all the way through.</p><p class="tut__check"><strong>✅ Check it:</strong> through-cuts are set to the material thickness, with tabs.</p></div><div class="tut__step"><p class="tut__goal">Goal: a path you checked</p><h3>Preview</h3><p>Look at the 3D preview and the estimated time. Every clamp must be outside the cut area.</p><p class="tut__check"><strong>✅ Check it:</strong> the preview shows your part, and no path crosses a clamp.</p></div><div class="tut__step"><p class="tut__goal">Goal: material that can’t move</p><h3>Clamp it</h3><p>Clamp the material flat to the wasteboard with at least two clamps, placed where the bit and dust shoe can’t hit them. Jog the dust shoe around the clamps to check.</p><p class="tut__check"><strong>✅ Check it:</strong> push on the material: it doesn’t move.</p></div><div class="tut__step"><p class="tut__goal">Goal: the machine knows where things are</p><h3>Home and zero</h3><p>Click <em>Carve</em> and follow the steps: home the machine, put in the bit, use the <strong>Z-probe</strong> on top of your material, then jog to the corner to set X and Y zero.</p><p class="tut__check"><strong>✅ Check it:</strong> Easel says zero is set, and the bit is at the front-left corner of your material.</p></div><div class="tut__step"><p class="tut__goal">Goal: a carve you watched</p><h3>Carve</h3><p>Glasses and hearing protection on. Turn on the vacuum. Start the carve. Stay with it, hand near the controls. When it’s done, wait for the spindle to stop before reaching in.</p><p class="tut__check"><strong>✅ Check it:</strong> the spindle stopped before your hands went in.</p></div></div>
+
+<h2>Common problems</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>What you see</th><th>Likely cause</th><th>What to do</th><th>Who fixes it</th></tr></thead><tbody><tr><td>Easel won’t connect</td><td>The E-stop is pressed in, the controller is off, or USB is unplugged</td><td>Twist the E-stop to release it. Check power and the USB cable.</td><td><strong>You</strong></td></tr><tr><td>Bit cuts into the wasteboard too deep, or not deep enough</td><td>Wrong thickness in Easel, or Z zero set wrong</td><td>Re-measure. Use the Z-probe on top of the material.</td><td><strong>You</strong></td></tr><tr><td>Part breaks free near the end</td><td>No tabs on a through-cut</td><td>Stop. Add tabs and re-run.</td><td><strong>You</strong></td></tr><tr><td>Material shifts mid-carve</td><td>Not clamped tight enough</td><td>Pause. Tell your teacher. Re-clamp and re-zero before you resume.</td><td><strong>Teacher</strong></td></tr><tr><td>Screaming noise or burnt smell</td><td>Dull bit, too fast, or too deep a pass</td><td>Pause. Tell your teacher. Use Easel’s default bit settings.</td><td><strong>Teacher</strong></td></tr><tr><td>Bit about to hit a clamp</td><td>Clamp inside the cut area</td><td>Pause (or E-stop) right away. Move the clamp.</td><td><strong>You</strong></td></tr><tr><td>Bit snapped</td><td>Too deep a pass, or the part moved</td><td>E-stop. Tell your teacher. Teacher changes the bit.</td><td><strong>Teacher</strong></td></tr></tbody></table></div>
+
+<h2>Safety</h2>
+<div class="tablewrap"><table class="dtable"><thead><tr><th>It looks or sounds scary…</th><th>What’s really going on</th></tr></thead><tbody><tr><td>It’s really loud</td><td>A spindle at high speed plus a vacuum is loud. That’s why you wear hearing protection. The sound should stay steady.</td></tr><tr><td>Chips flying</td><td>The dust shoe catches most. Glasses protect your eyes from the rest.</td></tr><tr><td>The gantry moves fast when it homes</td><td>Homing is quick but always the same path. Keep hands off the machine bed while it moves.</td></tr></tbody></table></div>
+<div class="card card--safe"><p class="card__title"><span class="ic">⚠️</span> What can actually hurt you</p><ul><li>A spinning bit. Hands out until the spindle has stopped completely.</li><li>Loose things get grabbed: tie back long hair, no hanging sleeves, hoodie strings, lanyards, or gloves.</li><li>Flying chips and noise: safety glasses and hearing protection, every time.</li><li>Fire is rare but possible from friction and dust. Never leave a carve running.</li><li>The E-stop is your best friend. Know where it is before you start.</li></ul></div>
+
+<div class="card card--tip"><p class="card__title"><span class="ic">📺</span> More videos</p><p><strong>From Inventables</strong> (official):</p><ul><li><a class="ext" href="https://www.youtube.com/watch?v=4OHcloeRdp0" target="_blank" rel="noopener">The First Carve on your X-Carve Pro</a> · 16:43</li><li><a class="ext" href="https://www.youtube.com/watch?v=cmwBItnHeHI" target="_blank" rel="noopener">Easel by Inventables (what Easel is)</a> · 2:02</li><li><a class="ext" href="https://www.youtube.com/watch?v=OW4AFT5UX8Y" target="_blank" rel="noopener">Easel Live: Carving Bits 101</a></li><li><a class="ext" href="https://www.easel.com/intro" target="_blank" rel="noopener">Easel intro project (a guided first design)</a></li></ul><p><strong>From teachers and makers</strong> (not the maker). Useful, but if a video and this guide disagree, follow this guide and ask your teacher. Older videos may show different screens.</p><ul><li><a class="ext" href="https://www.youtube.com/watch?v=Zxfg81c1Y3s" target="_blank" rel="noopener">Upcut or downcut CNC bits?</a> · Cutting It Close</li><li><a class="ext" href="https://www.youtube.com/watch?v=obwwoEAbBjc" target="_blank" rel="noopener">Beginner’s guide to CNC bits</a> · James Dean Designs · 33:28 · go deeper</li></ul></div>
+
+<h2>Earn your CNC license</h2>
+<div class="card card--safe signoff"><p class="card__title"><span class="ic">🪪</span> CNC license: practical sign-off</p><p>To earn the license, show your teacher each step <em>without help</em>, on the real machine. Tick the steps you can already do to practice. These ticks are just for you; your teacher signs the real sheet.</p><ul class="checks"><li><label><input type="checkbox"> <span>Name 10 parts of the X-Carve Pro.</span></label></li><li><label><input type="checkbox"> <span>Put on glasses and hearing protection, and check for loose hair, sleeves, and strings.</span></label></li><li><label><input type="checkbox"> <span>Measure the material and enter its size and thickness in Easel.</span></label></li><li><label><input type="checkbox"> <span>Set a through-cut depth with tabs, and preview the toolpath.</span></label></li><li><label><input type="checkbox"> <span>Clamp the material so the bit and dust shoe can’t hit the clamps.</span></label></li><li><label><input type="checkbox"> <span>Home the machine and set Z zero with the probe and X/Y zero on the corner.</span></label></li><li><label><input type="checkbox"> <span>Turn on the vacuum, start the carve, and stay with it.</span></label></li><li><label><input type="checkbox"> <span>Show where the E-stop is and when you’d use Pause instead.</span></label></li><li><label><input type="checkbox"> <span>Wait for the spindle to stop, then remove the part and vacuum the bed.</span></label></li></ul><div class="checks__bar"><span></span></div><p class="sim__say signoff__say" aria-live="polite"></p></div>
+
+<h2>Check your understanding</h2>
+<div class="quiz"><script type="application/json">[{"q": "Where should you set Z zero?", "options": ["On top of your material, with the Z-probe", "On the floor", "On the wasteboard", "Anywhere"], "answer": 0, "why": "Easel measures depth from Z zero, so zero on top of the material.", "hint": "Try the zero tool."}, {"q": "Why add tabs to a through-cut?", "options": ["To make it pretty", "To hold the part so it can’t break free and fly", "To speed it up", "To cool the bit"], "answer": 1, "why": "Tabs keep the part attached until the end.", "hint": "Holding on."}, {"q": "Easel won’t connect. What do you check first?", "options": ["The E-stop is released, power is on, and USB is plugged in", "Buy a new laptop", "The bit size", "The wasteboard"], "answer": 0, "why": "A pressed E-stop is the most common reason.", "hint": "The red button."}, {"q": "When can you reach in to grab your part?", "options": ["As soon as the cut path ends", "When the spindle has completely stopped", "While it’s slowing down", "Anytime with gloves"], "answer": 1, "why": "Only when the spindle has fully stopped. And no gloves near a spinning bit.", "hint": "Still."}, {"q": "Which plastic is OK on the CNC but banned in the laser?", "options": ["PVC", "HDPE", "Vinyl", "None"], "answer": 1, "why": "HDPE melts and burns in a laser, but cuts fine on a CNC.", "hint": "Cutting, not burning."}]</script></div>
+<p class="sources"><strong>Sources:</strong> Inventables X-Carve Pro specifications, Beginner’s Guide, and First Carve video (inventables.com, easel.com).</p>
+</article>
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+  </main>
+</div>
+
+<script src="nav.js"></script>
+<script src="learn.js"></script>
+<script src="labguide.js"></script>
+</body>
+</html>
