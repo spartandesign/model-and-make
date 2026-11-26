@@ -1,0 +1,58 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:09.865
+This is the Week 9 fingerboard deck, built in Onshape from a blank Part Studio. Pause after each step and do the same in your own document.
+
+00:00:10.415 --> 00:00:17.775
+First, set the workspace units to millimeters. Your calipers read in mm, and so does the printer.
+
+00:00:18.325 --> 00:00:26.290
+Now the variables. #bolt is the bolt diameter you measured with calipers. Ours is 2 mm. Type your own number.
+
+00:00:26.840 --> 00:00:35.431
+#clear is your clearance: the deviation from your Week 5 calibration cube. Ours is 0.3 mm.
+
+00:00:35.981 --> 00:00:44.921
+#hole is a formula: #bolt + #clear = 2.3 mm. If you re-measure, change one number and every hole updates.
+
+00:00:45.471 --> 00:00:50.010
+Start a sketch on the Top plane. Draw a center-point rectangle on the origin.
+
+00:00:50.560 --> 00:00:53.591
+Dimension it: 96 mm long,
+
+00:00:54.141 --> 00:00:58.402
+and 32 mm wide. The lines turn black: fully defined.
+
+00:00:58.952 --> 00:01:03.654
+Round the corners with the sketch fillet tool: 5 mm on each corner.
+
+00:01:04.204 --> 00:01:08.708
+Extrude the outline 2.5 mm. That's the deck thickness.
+
+00:01:09.258 --> 00:01:11.882
+Here's the blank deck. Now the truck holes.
+
+00:01:12.432 --> 00:01:15.985
+Pick the top face of the deck and start a new sketch on it.
+
+00:01:16.535 --> 00:01:20.970
+Draw one circle. For its diameter, type #hole, not a number.
+
+00:01:21.520 --> 00:01:29.867
+Place it from the origin. We used 28 mm along and 3 mm across. Use the hole spacing you measured on your trucks.
+
+00:01:30.417 --> 00:01:34.609
+Extrude the circle with Remove and Through all. That cuts the first hole.
+
+00:01:35.159 --> 00:01:46.385
+A linear pattern copies the hole. Feature pattern: 8 mm along, then 6 mm across. Four holes, one truck.
+
+00:01:46.935 --> 00:01:52.183
+Mirror the hole and the pattern across the Right plane. Now the second truck has its holes too.
+
+00:01:52.733 --> 00:02:02.462
+Here's the deck: 96 × 32 × 2.5 mm, 8 holes. It sits flat on the plate, so it prints with no supports.
+
+00:02:03.012 --> 00:02:13.937
+To print it, right-click the part and choose Export. Pick 3MF, name it clearly, and export. If you use STL, set units to millimeters first.

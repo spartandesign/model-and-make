@@ -11,6 +11,7 @@ model-and-make/
 │   ├── start-here.html  how the course works (notebook, OneNote, Canvas)
 │   ├── lab.html         machines and safety
 │   ├── chapter-01.html … chapter-15.html   one chapter per week (Weeks 6–7 and 16–20 share one)
+│   ├── extension-1.html … extension-4.html optional extensions (E4 = CNC router)
 │   ├── glossary.html
 │   ├── styles.css       the whole book's styling (shared with Build & Code)
 │   └── nav.js           the table of contents (single source of truth)

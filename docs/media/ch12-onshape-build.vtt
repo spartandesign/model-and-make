@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:09.540
+This is the Week 13 rack, built in Onshape from a blank Part Studio. Watch each step, then do the same with your own numbers.
+
+00:00:10.090 --> 00:00:17.729
+First, variables. A variable stores a number with a name. #t is the plywood thickness you measured: 3 mm.
+
+00:00:18.279 --> 00:00:23.097
+#kerf is your laser kerf from Week 12: 0.2 mm.
+
+00:00:23.647 --> 00:00:33.109
+#slot is a formula: #t − #kerf. Onshape works it out: 2.8 mm. If the kerf changes, every slot updates.
+
+00:00:33.659 --> 00:00:37.200
+Now the base. Pick the Top plane and start a sketch.
+
+00:00:37.750 --> 00:00:40.363
+Draw a center-point rectangle on the origin.
+
+00:00:40.913 --> 00:00:44.825
+Press D to dimension it. 140 mm long,
+
+00:00:45.375 --> 00:00:49.206
+and 80 mm deep. Black lines mean the sketch is fully defined.
+
+00:00:49.756 --> 00:00:53.135
+Extrude it. For the depth, type #t instead of a number.
+
+00:00:53.685 --> 00:00:56.402
+The base is exactly one plywood thickness.
+
+00:00:56.952 --> 00:01:00.272
+Next, an upright. Start a sketch on the Front plane.
+
+00:01:00.822 --> 00:01:04.003
+Draw a rectangle, 140 by 50 mm.
+
+00:01:04.553 --> 00:01:09.488
+Make its bottom edge coincident with the top of the base, so the upright sits on it.
+
+00:01:10.038 --> 00:01:17.271
+Add two tabs underneath: 20 mm wide, 30 mm from the center. The tabs will go through the base.
+
+00:01:17.821 --> 00:01:24.345
+Extrude the upright and both tabs as a new part. Hiding the base makes the small tab regions easy to pick.
+
+00:01:24.895 --> 00:01:29.830
+The depth is #t again, with a starting offset of 25 mm.
+
+00:01:30.380 --> 00:01:36.277
+Mirror the upright across the Front plane to make the second one. Choose New, so it stays a separate part.
+
+00:01:36.827 --> 00:01:42.226
+Now the board notches. Sketch one notch: 30 mm wide, 12 mm deep.
+
+00:01:42.776 --> 00:01:48.001
+Extrude it with Remove, Through all, and Symmetric. It cuts both uprights at once.
+
+00:01:48.551 --> 00:01:53.868
+A linear pattern repeats the notch: 3 copies, 40 mm apart.
+
+00:01:54.418 --> 00:02:02.104
+Last, the slots in the base. Sketch one slot on the Top plane. Its width is #slot: 2.8 mm.
+
+00:02:02.654 --> 00:02:09.202
+Place it with a formula too: 25 mm + #kerf/2, so the slot is centered under the tab.
+
+00:02:09.752 --> 00:02:11.400
+Cut it through the base only.
+
+00:02:11.950 --> 00:02:17.581
+Mirror the slot across the Right plane, then mirror both across the Front plane. Four slots.
+
+00:02:18.131 --> 00:02:24.679
+Here's the rack. The tabs are 3 mm thick, and the slots are drawn at 2.8 mm.
+
+00:02:25.229 --> 00:02:36.363
+From underneath, every tab sits in its slot. The laser burns away the kerf, so the cut slot comes out about 3 mm: a snug press fit, no glue.
+
+00:02:36.913 --> 00:02:45.017
+To send it to the laser, right-click a face and choose Export as DXF. Check Use workspace units, so it's in millimeters.
