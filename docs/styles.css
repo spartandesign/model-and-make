@@ -238,6 +238,7 @@ a.ext::after{content:"\2197";font-size:.78em;margin-left:2px;color:var(--blue);v
 
 /* ---------- Figures, formulas & data tables (added Ch. 3) ---------- */
 .fig{margin:26px 0;}
+.fig img{display:block;width:100%;max-width:720px;height:auto;margin:0 auto;}
 .fig svg{display:block;width:100%;max-width:640px;height:auto;margin:0 auto;}
 .fig figcaption{
   font-size:13.5px;color:var(--gray);text-align:center;
