@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:08.634
+This is your first print: a cube exactly 2.000 in on every side. In Onshape, click Create → Document.
+
+00:00:09.184 --> 00:00:14.060
+Name it “Calibration Cube – Your Name.” Then click Create.
+
+00:00:14.610 --> 00:00:20.566
+You land in a blank Part Studio with three planes: Top, Front, and Right.
+
+00:00:21.116 --> 00:00:28.477
+Check the units: document menu → Workspace units. Length should say Inch, with 3 decimals.
+
+00:00:29.027 --> 00:00:35.192
+Start a sketch on the Top plane and press N. Press R and draw a center-point rectangle on the origin.
+
+00:00:35.742 --> 00:00:40.676
+Press D and pick the right edge. The box shows the size you happened to draw.
+
+00:00:41.226 --> 00:00:44.825
+Type 2.000 and press Enter.
+
+00:00:45.375 --> 00:00:52.573
+Do the same for the top edge. Now it's a 2 × 2 square, and the lines are black: fully defined.
+
+00:00:53.123 --> 00:00:57.558
+Finish the sketch. Press Shift+E to extrude, and click the square.
+
+00:00:58.108 --> 00:01:02.950
+Set the depth to 2.000 in, and click the green check.
+
+00:01:03.500 --> 00:01:04.579
+There's your cube.
+
+00:01:05.129 --> 00:01:14.162
+Before you submit, verify. Click one edge. Bottom right of the screen: Length 2.000 in.
+
+00:01:14.712 --> 00:01:16.140
+Check the second direction.
+
+00:01:16.690 --> 00:01:22.948
+And the height. All three read 2.000 in. That's your designed number for the accuracy log.
+
+00:01:23.498 --> 00:01:28.281
+To submit, right-click the part → Export. Put your name in the file name.
+
+00:01:28.831 --> 00:01:44.632
+One trap: for STL, change Units to Millimeter. Slicers read STL numbers as mm, so an inch file prints a tiny 2 mm cube. Or pick 3MF, which keeps the units.
