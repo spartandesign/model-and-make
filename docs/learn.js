@@ -423,7 +423,7 @@
   // ---------- Is the drawing complete? ----------
   $$(".dimsim").forEach(el => {
     const D = [
-      { k: "len", t: "Overall length: 96", need: 1 }, { k: "wid", t: "Overall width: 32", need: 1 }, { k: "thk", t: "Thickness", need: 1 },
+      { k: "len", t: "Overall length: 96", need: 1 }, { k: "wid", t: "Overall width: 32 (or 28)", need: 1 }, { k: "thk", t: "Thickness", need: 1 },
       { k: "kick", t: "Kicktail height", need: 1 }, { k: "dia", t: "Hole Ø (bolt + clearance)", need: 1 }, { k: "sp1", t: "Hole spacing along the deck", need: 1 },
       { k: "sp2", t: "Hole spacing across the deck", need: 1 }, { k: "len2", t: "Length again, on the front view", need: 0, why: "Length is already on the top view. Each size once." },
       { k: "each", t: "Every hole's Ø, one by one (8 times)", need: 0, why: "Dimension one hole and note “8×”. Repeating it clutters the drawing." },

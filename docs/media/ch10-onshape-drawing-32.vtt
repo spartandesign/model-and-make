@@ -1,0 +1,58 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:09.691
+This is the Week 11 working drawing. Open your deck model from Week 9. The drawing is made from it, so if the model changes, the drawing updates.
+
+00:00:10.241 --> 00:00:13.689
+Click the + at the bottom left and choose Create Drawing.
+
+00:00:14.239 --> 00:00:23.585
+Pick Onshape templates → ANSI → ANSI_A_MM. Choose No views, then OK.
+
+00:00:24.135 --> 00:00:31.368
+Click your part. Set View scale to 1:1, so the drawing is real size. Click to place the front view.
+
+00:00:31.918 --> 00:00:35.830
+Move up and click. That's the top view, right above the front view.
+
+00:00:36.380 --> 00:00:41.082
+For the right view, use Projected view. Pick the front view, move right, and click.
+
+00:00:41.632 --> 00:00:51.234
+Three views: top above front, right beside front. That's third-angle projection, the same layout from Week 2.
+
+00:00:51.784 --> 00:01:00.375
+Now dimension. For overall length, use the Maximum dimension tool (Ctrl+M) and pick both rounded ends: 96.
+
+00:01:00.925 --> 00:01:05.047
+Press D and pick the top and bottom edges: 32 wide.
+
+00:01:05.597 --> 00:01:09.718
+Shift+D is the diameter tool. Pick one hole: Ø2.3.
+
+00:01:10.268 --> 00:01:14.889
+Now the hole spacing. Pick two holes: 8 mm along the deck,
+
+00:01:15.439 --> 00:01:16.461
+6 mm across,
+
+00:01:17.011 --> 00:01:21.074
+and 42 mm between the trucks. Each size appears once.
+
+00:01:21.624 --> 00:01:29.995
+The fillet adds extra lines. Right-click the right view → Tangent edges → Hidden, so you pick the real edges.
+
+00:01:30.545 --> 00:01:34.272
+Then dimension the thickness: 2.5 mm.
+
+00:01:34.822 --> 00:01:46.536
+The title block reads your part's properties. Right-click the part → Properties. Fill in part number and titles, including the hole note: bolt + clearance.
+
+00:01:47.086 --> 00:01:54.389
+Back in the drawing, click Update. The title block shows the name, hole note, part number, and scale.
+
+00:01:54.939 --> 00:02:01.023
+Check every box: units mm, scale 1:1, your name, and the date.
+
+00:02:01.573 --> 00:02:11.975
+To turn it in, right-click the drawing tab → Export → PDF. Then trade with a partner: could they build your deck from this page alone?

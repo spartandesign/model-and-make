@@ -1,0 +1,79 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:10.167
+This is the Week 9 fingerboard deck. We'll build it the same way you built the skateboard deck in Lesson 2.1, just smaller, and in millimeters.
+
+00:00:10.717 --> 00:00:16.092
+Open the document menu, choose Workspace units, and set length to millimeters.
+
+00:00:16.642 --> 00:00:24.316
+This part is new. Make a variable called #bolt: the bolt diameter you measured. Ours is 2 mm.
+
+00:00:24.866 --> 00:00:30.613
+Make a variable called #clear: the clearance from your Week 5 cube. Ours is 0.3 mm.
+
+00:00:31.163 --> 00:00:36.562
+And #hole = #bolt + #clear. That's 2.3 mm.
+
+00:00:37.112 --> 00:00:44.043
+Now, just like Lesson 2.1. Start a sketch on the Top plane, and press N to look straight down.
+
+00:00:44.593 --> 00:00:48.064
+Press R and draw a center-point rectangle on the origin.
+
+00:00:48.614 --> 00:00:53.874
+Press C for a circle. Click the midpoint of the left side. Wait for the yellow box.
+
+00:00:54.424 --> 00:01:00.368
+Drag to the corner and click. Do the same on the right. The circles make the round nose and tail.
+
+00:01:00.918 --> 00:01:05.864
+Press D. Dimension the right edge of the rectangle: 32 mm wide.
+
+00:01:06.414 --> 00:01:10.245
+Then click the left tip and the right tip, and type 96.
+
+00:01:10.795 --> 00:01:14.197
+Every line is black. The sketch is fully defined.
+
+00:01:14.747 --> 00:01:21.330
+Extrude it. In Lesson 2.1 the deck was 10 mm thick. A fingerboard deck is 2.5 mm.
+
+00:01:21.880 --> 00:01:24.585
+There's the blank deck. Next, the bolt holes.
+
+00:01:25.135 --> 00:01:27.886
+Start a new sketch on the top face of the deck.
+
+00:01:28.436 --> 00:01:36.761
+Press R. Move right of the origin until the yellow dotted line appears, and click. That keeps the holes centered.
+
+00:01:37.311 --> 00:01:42.233
+Click again to place the corner. Each corner of this rectangle becomes a bolt hole.
+
+00:01:42.783 --> 00:01:51.920
+Dimension it with your truck numbers. Ours: 25 from the origin, 8 along, 6 across. Use your own measurements.
+
+00:01:52.470 --> 00:01:58.217
+Use Mirror. Pick the Right plane as the mirror line, then click the four rectangle lines.
+
+00:01:58.767 --> 00:02:02.680
+Now the second truck has its rectangle too. Finish the sketch.
+
+00:02:03.230 --> 00:02:09.708
+Open the Hole tool. Choose Simple. For the diameter, type #hole. Termination: Through all.
+
+00:02:10.258 --> 00:02:15.622
+Click the four corners of each rectangle. Eight holes, each one bolt + clearance.
+
+00:02:16.172 --> 00:02:21.199
+If you re-measure your bolt, change one variable and all eight holes update.
+
+00:02:21.749 --> 00:02:30.701
+Last, the fillet. Press Shift+F, pick the top and bottom edges. Lesson 2.1 used 0.125 in. We use 0.5 mm.
+
+00:02:31.251 --> 00:02:40.155
+Here's the deck: 96 × 32 × 2.5 mm, 8 holes. It sits flat, so it prints with no supports.
+
+00:02:40.705 --> 00:02:46.545
+To print it, right-click the part and choose Export. Pick 3MF, name it, and export.
